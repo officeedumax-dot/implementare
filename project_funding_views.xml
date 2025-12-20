@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- List view for "Proiecte contractat" with per-row Afișează button -->
+  <record id="view_project_funding_contractat_list" model="ir.ui.view">
+    <field name="name">project.funding.contractat.list</field>
+    <field name="model">project.funding</field>
+    <field name="arch" type="xml">
+      <list string="Proiecte contractat">
+        <field name="beneficiar"/>
+        <field name="denumire"/>
+        <!-- Per-row Afișează button: opens implementation or wizard -->
+        <button name="action_manage_implementation"
+                type="object"
+                string="Afișează"
+                class="oe_highlight"/>
+        <field name="cod"/>
+        <field name="data_depunere"/>
+        <field name="data_semnare"/>
+        <field name="data_finalizare"/>
+        <field name="status_proiect"/>
+        <field name="create_date"/>
+      </list>
+    </field>
+  </record>
+
+  <!-- Action for the "Proiecte contractat" menu: show only list view (no form) -->
+  <record id="action_project_funding_contractat" model="ir.actions.act_window">
+    <field name="name">Proiecte implementare (Contractat)</field>
+    <field name="res_model">project.funding</field>
+    <!-- IMPORTANT: only 'list' view mode so clicking row does nothing (form not available) -->
+    <field name="view_mode">list</field>
+    <field name="view_id" ref="view_project_funding_contractat_list"/>
+    <field name="domain">[('status_proiect','=','contractat')]</field>
+  </record>
+
+  <!-- Menu -->
+  <menuitem id="menu_project_implementation_root" name="Implementare proiecte" sequence="50"/>
+  <menuitem id="menu_project_funding_contractat" name="Proiecte contractat" parent="menu_project_implementation_root"
+            action="action_project_funding_contractat" sequence="1"/>
+</odoo>

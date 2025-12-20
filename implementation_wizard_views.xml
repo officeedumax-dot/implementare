@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_project_implementation_create_wizard_form" model="ir.ui.view">
+    <field name="name">project.implementation.create.wizard.form</field>
+    <field name="model">project.implementation.create.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Creați implementare">
+        <sheet>
+          <group>
+            <field name="funding_id" readonly="1"/>
+          </group>
+          <group>
+            <field name="message" readonly="1"/>
+          </group>
+        </sheet>
+        <footer>
+          <button string="Create" type="object" name="action_create_implementation" class="btn btn-primary"/>
+          <button string="Cancel" type="object" name="action_cancel" class="btn btn-secondary"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>

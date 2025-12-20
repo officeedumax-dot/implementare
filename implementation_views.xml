@@ -1,0 +1,121 @@
+<odoo>
+  <record id="view_project_implementation_tree" model="ir.ui.view">
+    <field name="name">project.implementation.tree</field>
+    <field name="model">project.implementation</field>
+    <field name="arch" type="xml">
+      <list string="Implementări">
+        <field name="name"/>
+        <field name="funding_project_id"/>
+        <field name="partner_id"/>
+        <field name="user_id"/>
+        <field name="start_date"/>
+        <field name="end_date"/>
+        <field name="state"/>
+        <field name="budget_line_count"/>
+        <field name="activity_count"/>
+        <field name="purchase_count"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="view_project_implementation_form" model="ir.ui.view">
+    <field name="name">project.implementation.form</field>
+    <field name="model">project.implementation</field>
+    <field name="arch" type="xml">
+      <form string="Implementare proiect">
+        <sheet class="o_form_sheet_full">
+          <notebook>
+            <page string="Informații">
+              <group>
+                <group>
+                  <field name="funding_project_id" required="1"/>
+                  <field name="name" readonly="1"/>
+                  <field name="partner_id" readonly="1"/>
+                  <field name="user_id"/>
+                  <field name="state"/>
+                </group>
+                <group>
+                  <field name="start_date"/>
+                  <field name="end_date"/>
+                  <field name="description"/>
+                </group>
+              </group>
+            </page>
+
+            <page string="Deviz">
+              <field name="budget_line_ids" readonly="1" nolabel="1">
+                <list>
+                  <field name="chapter"/>
+                  <field name="subchapter"/>
+                  <field name="name"/>
+                  <field name="total"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Activități">
+              <field name="activity_ids" readonly="1" nolabel="1">
+                <list>
+                  <field name="name"/>
+                  <field name="phase"/>
+                  <field name="date_start"/>
+                  <field name="date_end"/>
+                  <field name="state"/>
+                </list>
+              </field>
+            </page>
+
+            <!-- Achiziții din project.purchase legate prin project_id -->
+            <page string="Achiziții">
+              <field name="purchase_ids" readonly="1" nolabel="1">
+                <list>
+                  <field name="name"/>
+                  <field name="furnizor"/>
+                  <field name="partner_id"/>
+                  <field name="data"/>
+                  <field name="date_order"/>
+                  <field name="valoare"/>
+                  <field name="amount_total"/>
+                  <field name="currency_id"/>
+                  <field name="state"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Contracte">
+              <field name="contract_ids" nolabel="1" context="{'default_implementation_id': id}">
+                <list editable="bottom">
+                  <field name="name"/>
+                  <field name="partner_id"/>
+                  <field name="date_signed"/>
+                  <field name="state"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Documente">
+              <field name="document_ids" nolabel="1" context="{'default_implementation_id': id}">
+                <list editable="bottom">
+                  <field name="name"/>
+                  <field name="partner_id"/>
+                  <field name="date"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Solicitări">
+              <field name="request_ids" nolabel="1" context="{'default_implementation_id': id}">
+                <list editable="bottom">
+                  <field name="name"/>
+                  <field name="amount"/>
+                  <field name="currency_id"/>
+                  <field name="state"/>
+                </list>
+              </field>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>

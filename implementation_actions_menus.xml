@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <!-- Global actions for referenced models (lists/forms). These are the menus the user asked for. -->
+  <!-- Buget -->
+  <record id="action_project_budget_all" model="ir.actions.act_window">
+    <field name="name">Buget (toate)</field>
+    <field name="res_model">project.budget</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_budget_all" name="Buget" parent="menu_project_implementation_root" action="action_project_budget_all" sequence="10"/>
+
+  <!-- Activitati -->
+  <record id="action_project_activity_all" model="ir.actions.act_window">
+    <field name="name">Activități (toate)</field>
+    <field name="res_model">project.activity</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_activity_all" name="Activități" parent="menu_project_implementation_root" action="action_project_activity_all" sequence="20"/>
+
+  <!-- Achizitii (folosim modelul placeholder project.purchase) -->
+  <record id="action_project_purchase_all" model="ir.actions.act_window">
+    <field name="name">Achiziții (toate)</field>
+    <field name="res_model">project.purchase</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_purchase_all" name="Achiziții" parent="menu_project_implementation_root" action="action_project_purchase_all" sequence="30"/>
+
+  <!-- Contracte (our model) -->
+  <record id="action_project_contract_all" model="ir.actions.act_window">
+    <field name="name">Contracte</field>
+    <field name="res_model">project.contract</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_contract_all" name="Contracte" parent="menu_project_implementation_root" action="action_project_contract_all" sequence="40"/>
+
+  <!-- Documente (our model) -->
+  <record id="action_project_document_all" model="ir.actions.act_window">
+    <field name="name">Documente</field>
+    <field name="res_model">project.document</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_document_all" name="Documente" parent="menu_project_implementation_root" action="action_project_document_all" sequence="50"/>
+
+  <!-- Solicitari (our model) -->
+  <record id="action_project_request_all" model="ir.actions.act_window">
+    <field name="name">Solicitări</field>
+    <field name="res_model">project.request</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <menuitem id="menu_project_request_all" name="Solicitări" parent="menu_project_implementation_root" action="action_project_request_all" sequence="60"/>
+
+  <!-- Analiza (placeholder) -->
+  <record id="action_project_analysis" model="ir.actions.act_window">
+    <field name="name">Analiză</field>
+    <field name="res_model">project.implementation</field>
+    <field name="view_mode">form,tree</field>
+  </record>
+  <menuitem id="menu_project_analysis" name="Analiză" parent="menu_project_implementation_root" action="action_project_analysis" sequence="70"/>
+</odoo>
