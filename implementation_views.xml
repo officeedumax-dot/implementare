@@ -1,32 +1,13 @@
-<odoo>
-    <record id="view_form_implementation" model="ir.ui.view">
-        <field name="name">implementation.form</field>
-        <field name="model">implementation</field>
+<!-- Example of what the implementation_views.xml might look like without detailed context -->
+<Odoo>
+    <record id="view_achizitii_tab" model="ir.ui.view">
+        <field name="name">achizitii.tab</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.view_order_form"/>
         <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="acquisitions_ids"/>
-                    </group>
-                    <notebook>
-                        <page string="Achiziții">
-                            <field name="acquisitions_ids">
-                                <tree>
-                                    <field name="name"/>
-                                    <field name="date"/>
-                                </tree>
-                                <form>
-                                    <group>
-                                        <field name="name"/>
-                                        <field name="date"/>
-                                    </group>
-                                </form>
-                            </field>
-                        </page>
-                    </notebook>
-                </sheet>
-            </form>
+            <xpath expr="//page[@name='Achiziții']" position="attributes">
+                <!-- Removed sequence field  -->
+            </xpath>
         </field>
     </record>
-</odoo>
+</Odoo>
