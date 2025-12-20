@@ -1,0 +1,2833 @@
+"table_schema","table_name","column_name","data_type","character_maximum_length"
+"public","account_analytic_account","id","integer",NULL
+"public","account_analytic_account","plan_id","integer",NULL
+"public","account_analytic_account","root_plan_id","integer",NULL
+"public","account_analytic_account","company_id","integer",NULL
+"public","account_analytic_account","partner_id","integer",NULL
+"public","account_analytic_account","create_uid","integer",NULL
+"public","account_analytic_account","write_uid","integer",NULL
+"public","account_analytic_account","code","character varying",NULL
+"public","account_analytic_account","name","jsonb",NULL
+"public","account_analytic_account","active","boolean",NULL
+"public","account_analytic_account","create_date","timestamp without time zone",NULL
+"public","account_analytic_account","write_date","timestamp without time zone",NULL
+"public","account_analytic_applicability","id","integer",NULL
+"public","account_analytic_applicability","analytic_plan_id","integer",NULL
+"public","account_analytic_applicability","company_id","integer",NULL
+"public","account_analytic_applicability","create_uid","integer",NULL
+"public","account_analytic_applicability","write_uid","integer",NULL
+"public","account_analytic_applicability","business_domain","character varying",NULL
+"public","account_analytic_applicability","applicability","character varying",NULL
+"public","account_analytic_applicability","create_date","timestamp without time zone",NULL
+"public","account_analytic_applicability","write_date","timestamp without time zone",NULL
+"public","account_analytic_distribution_model","id","integer",NULL
+"public","account_analytic_distribution_model","sequence","integer",NULL
+"public","account_analytic_distribution_model","partner_id","integer",NULL
+"public","account_analytic_distribution_model","partner_category_id","integer",NULL
+"public","account_analytic_distribution_model","company_id","integer",NULL
+"public","account_analytic_distribution_model","create_uid","integer",NULL
+"public","account_analytic_distribution_model","write_uid","integer",NULL
+"public","account_analytic_distribution_model","analytic_distribution","jsonb",NULL
+"public","account_analytic_distribution_model","create_date","timestamp without time zone",NULL
+"public","account_analytic_distribution_model","write_date","timestamp without time zone",NULL
+"public","account_analytic_line","id","integer",NULL
+"public","account_analytic_line","account_id","integer",NULL
+"public","account_analytic_line","product_uom_id","integer",NULL
+"public","account_analytic_line","partner_id","integer",NULL
+"public","account_analytic_line","user_id","integer",NULL
+"public","account_analytic_line","company_id","integer",NULL
+"public","account_analytic_line","currency_id","integer",NULL
+"public","account_analytic_line","create_uid","integer",NULL
+"public","account_analytic_line","write_uid","integer",NULL
+"public","account_analytic_line","name","character varying",NULL
+"public","account_analytic_line","category","character varying",NULL
+"public","account_analytic_line","date","date",NULL
+"public","account_analytic_line","amount","numeric",NULL
+"public","account_analytic_line","create_date","timestamp without time zone",NULL
+"public","account_analytic_line","write_date","timestamp without time zone",NULL
+"public","account_analytic_line","unit_amount","double precision",NULL
+"public","account_analytic_plan","id","integer",NULL
+"public","account_analytic_plan","parent_id","integer",NULL
+"public","account_analytic_plan","color","integer",NULL
+"public","account_analytic_plan","sequence","integer",NULL
+"public","account_analytic_plan","create_uid","integer",NULL
+"public","account_analytic_plan","write_uid","integer",NULL
+"public","account_analytic_plan","parent_path","character varying",NULL
+"public","account_analytic_plan","complete_name","character varying",NULL
+"public","account_analytic_plan","name","jsonb",NULL
+"public","account_analytic_plan","default_applicability","jsonb",NULL
+"public","account_analytic_plan","description","text",NULL
+"public","account_analytic_plan","create_date","timestamp without time zone",NULL
+"public","account_analytic_plan","write_date","timestamp without time zone",NULL
+"public","acquisition_template_budget_rel","acquisition_template_id","integer",NULL
+"public","acquisition_template_budget_rel","budget_id","integer",NULL
+"public","acquisition_template_singleton_budget_rel","acquisition_template_id","integer",NULL
+"public","acquisition_template_singleton_budget_rel","singleton_line_id","integer",NULL
+"public","activity_attachment_rel","activity_id","integer",NULL
+"public","activity_attachment_rel","attachment_id","integer",NULL
+"public","auth_passkey_key","id","integer",NULL
+"public","auth_passkey_key","sign_count","integer",NULL
+"public","auth_passkey_key","create_uid","integer",NULL
+"public","auth_passkey_key","write_uid","integer",NULL
+"public","auth_passkey_key","name","character varying",NULL
+"public","auth_passkey_key","credential_identifier","character varying",NULL
+"public","auth_passkey_key","create_date","timestamp without time zone",NULL
+"public","auth_passkey_key","write_date","timestamp without time zone",NULL
+"public","auth_passkey_key","public_key","character varying",NULL
+"public","auth_passkey_key_create","id","integer",NULL
+"public","auth_passkey_key_create","create_uid","integer",NULL
+"public","auth_passkey_key_create","write_uid","integer",NULL
+"public","auth_passkey_key_create","name","character varying",NULL
+"public","auth_passkey_key_create","create_date","timestamp without time zone",NULL
+"public","auth_passkey_key_create","write_date","timestamp without time zone",NULL
+"public","auth_totp_device","id","integer",NULL
+"public","auth_totp_device","name","character varying",NULL
+"public","auth_totp_device","user_id","integer",NULL
+"public","auth_totp_device","scope","character varying",NULL
+"public","auth_totp_device","expiration_date","timestamp without time zone",NULL
+"public","auth_totp_device","index","character varying",8
+"public","auth_totp_device","key","character varying",NULL
+"public","auth_totp_device","create_date","timestamp without time zone",NULL
+"public","auth_totp_rate_limit_log","id","integer",NULL
+"public","auth_totp_rate_limit_log","user_id","integer",NULL
+"public","auth_totp_rate_limit_log","create_uid","integer",NULL
+"public","auth_totp_rate_limit_log","write_uid","integer",NULL
+"public","auth_totp_rate_limit_log","ip","character varying",NULL
+"public","auth_totp_rate_limit_log","limit_type","character varying",NULL
+"public","auth_totp_rate_limit_log","create_date","timestamp without time zone",NULL
+"public","auth_totp_rate_limit_log","write_date","timestamp without time zone",NULL
+"public","auth_totp_wizard","id","integer",NULL
+"public","auth_totp_wizard","user_id","integer",NULL
+"public","auth_totp_wizard","create_uid","integer",NULL
+"public","auth_totp_wizard","write_uid","integer",NULL
+"public","auth_totp_wizard","secret","character varying",NULL
+"public","auth_totp_wizard","url","character varying",NULL
+"public","auth_totp_wizard","create_date","timestamp without time zone",NULL
+"public","auth_totp_wizard","write_date","timestamp without time zone",NULL
+"public","auth_totp_wizard","qrcode","bytea",NULL
+"public","base_document_layout","id","integer",NULL
+"public","base_document_layout","company_id","integer",NULL
+"public","base_document_layout","report_layout_id","integer",NULL
+"public","base_document_layout","create_uid","integer",NULL
+"public","base_document_layout","write_uid","integer",NULL
+"public","base_document_layout","create_date","timestamp without time zone",NULL
+"public","base_document_layout","write_date","timestamp without time zone",NULL
+"public","base_enable_profiling_wizard","id","integer",NULL
+"public","base_enable_profiling_wizard","create_uid","integer",NULL
+"public","base_enable_profiling_wizard","write_uid","integer",NULL
+"public","base_enable_profiling_wizard","duration","character varying",NULL
+"public","base_enable_profiling_wizard","expiration","timestamp without time zone",NULL
+"public","base_enable_profiling_wizard","create_date","timestamp without time zone",NULL
+"public","base_enable_profiling_wizard","write_date","timestamp without time zone",NULL
+"public","base_import_import","id","integer",NULL
+"public","base_import_import","create_uid","integer",NULL
+"public","base_import_import","write_uid","integer",NULL
+"public","base_import_import","res_model","character varying",NULL
+"public","base_import_import","file_name","character varying",NULL
+"public","base_import_import","file_type","character varying",NULL
+"public","base_import_import","create_date","timestamp without time zone",NULL
+"public","base_import_import","write_date","timestamp without time zone",NULL
+"public","base_import_import","file","bytea",NULL
+"public","base_import_mapping","id","integer",NULL
+"public","base_import_mapping","create_uid","integer",NULL
+"public","base_import_mapping","write_uid","integer",NULL
+"public","base_import_mapping","res_model","character varying",NULL
+"public","base_import_mapping","column_name","character varying",NULL
+"public","base_import_mapping","field_name","character varying",NULL
+"public","base_import_mapping","create_date","timestamp without time zone",NULL
+"public","base_import_mapping","write_date","timestamp without time zone",NULL
+"public","base_import_module","id","integer",NULL
+"public","base_import_module","create_uid","integer",NULL
+"public","base_import_module","write_uid","integer",NULL
+"public","base_import_module","state","character varying",NULL
+"public","base_import_module","import_message","text",NULL
+"public","base_import_module","modules_dependencies","text",NULL
+"public","base_import_module","force","boolean",NULL
+"public","base_import_module","with_demo","boolean",NULL
+"public","base_import_module","create_date","timestamp without time zone",NULL
+"public","base_import_module","write_date","timestamp without time zone",NULL
+"public","base_import_module","module_file","bytea",NULL
+"public","base_language_export","id","integer",NULL
+"public","base_language_export","model_id","integer",NULL
+"public","base_language_export","create_uid","integer",NULL
+"public","base_language_export","write_uid","integer",NULL
+"public","base_language_export","name","character varying",NULL
+"public","base_language_export","lang","character varying",NULL
+"public","base_language_export","format","character varying",NULL
+"public","base_language_export","export_type","character varying",NULL
+"public","base_language_export","domain","character varying",NULL
+"public","base_language_export","state","character varying",NULL
+"public","base_language_export","create_date","timestamp without time zone",NULL
+"public","base_language_export","write_date","timestamp without time zone",NULL
+"public","base_language_export","data","bytea",NULL
+"public","base_language_import","id","integer",NULL
+"public","base_language_import","create_uid","integer",NULL
+"public","base_language_import","write_uid","integer",NULL
+"public","base_language_import","name","character varying",NULL
+"public","base_language_import","code","character varying",NULL
+"public","base_language_import","filename","character varying",NULL
+"public","base_language_import","overwrite","boolean",NULL
+"public","base_language_import","create_date","timestamp without time zone",NULL
+"public","base_language_import","write_date","timestamp without time zone",NULL
+"public","base_language_import","data","bytea",NULL
+"public","base_language_install","id","integer",NULL
+"public","base_language_install","create_uid","integer",NULL
+"public","base_language_install","write_uid","integer",NULL
+"public","base_language_install","overwrite","boolean",NULL
+"public","base_language_install","create_date","timestamp without time zone",NULL
+"public","base_language_install","write_date","timestamp without time zone",NULL
+"public","base_module_install_request","id","integer",NULL
+"public","base_module_install_request","module_id","integer",NULL
+"public","base_module_install_request","user_id","integer",NULL
+"public","base_module_install_request","create_uid","integer",NULL
+"public","base_module_install_request","write_uid","integer",NULL
+"public","base_module_install_request","body_html","text",NULL
+"public","base_module_install_request","create_date","timestamp without time zone",NULL
+"public","base_module_install_request","write_date","timestamp without time zone",NULL
+"public","base_module_install_review","id","integer",NULL
+"public","base_module_install_review","module_id","integer",NULL
+"public","base_module_install_review","create_uid","integer",NULL
+"public","base_module_install_review","write_uid","integer",NULL
+"public","base_module_install_review","create_date","timestamp without time zone",NULL
+"public","base_module_install_review","write_date","timestamp without time zone",NULL
+"public","base_module_uninstall","id","integer",NULL
+"public","base_module_uninstall","create_uid","integer",NULL
+"public","base_module_uninstall","write_uid","integer",NULL
+"public","base_module_uninstall","show_all","boolean",NULL
+"public","base_module_uninstall","create_date","timestamp without time zone",NULL
+"public","base_module_uninstall","write_date","timestamp without time zone",NULL
+"public","base_module_uninstall_ir_module_module_rel","base_module_uninstall_id","integer",NULL
+"public","base_module_uninstall_ir_module_module_rel","ir_module_module_id","integer",NULL
+"public","base_module_update","id","integer",NULL
+"public","base_module_update","updated","integer",NULL
+"public","base_module_update","added","integer",NULL
+"public","base_module_update","create_uid","integer",NULL
+"public","base_module_update","write_uid","integer",NULL
+"public","base_module_update","state","character varying",NULL
+"public","base_module_update","create_date","timestamp without time zone",NULL
+"public","base_module_update","write_date","timestamp without time zone",NULL
+"public","base_module_upgrade","id","integer",NULL
+"public","base_module_upgrade","create_uid","integer",NULL
+"public","base_module_upgrade","write_uid","integer",NULL
+"public","base_module_upgrade","module_info","text",NULL
+"public","base_module_upgrade","create_date","timestamp without time zone",NULL
+"public","base_module_upgrade","write_date","timestamp without time zone",NULL
+"public","base_partner_merge_automatic_wizard","id","integer",NULL
+"public","base_partner_merge_automatic_wizard","number_group","integer",NULL
+"public","base_partner_merge_automatic_wizard","current_line_id","integer",NULL
+"public","base_partner_merge_automatic_wizard","dst_partner_id","integer",NULL
+"public","base_partner_merge_automatic_wizard","maximum_group","integer",NULL
+"public","base_partner_merge_automatic_wizard","create_uid","integer",NULL
+"public","base_partner_merge_automatic_wizard","write_uid","integer",NULL
+"public","base_partner_merge_automatic_wizard","state","character varying",NULL
+"public","base_partner_merge_automatic_wizard","group_by_email","boolean",NULL
+"public","base_partner_merge_automatic_wizard","group_by_name","boolean",NULL
+"public","base_partner_merge_automatic_wizard","group_by_is_company","boolean",NULL
+"public","base_partner_merge_automatic_wizard","group_by_vat","boolean",NULL
+"public","base_partner_merge_automatic_wizard","group_by_parent_id","boolean",NULL
+"public","base_partner_merge_automatic_wizard","exclude_contact","boolean",NULL
+"public","base_partner_merge_automatic_wizard","exclude_journal_item","boolean",NULL
+"public","base_partner_merge_automatic_wizard","create_date","timestamp without time zone",NULL
+"public","base_partner_merge_automatic_wizard","write_date","timestamp without time zone",NULL
+"public","base_partner_merge_automatic_wizard_res_partner_rel","base_partner_merge_automatic_wizard_id","integer",NULL
+"public","base_partner_merge_automatic_wizard_res_partner_rel","res_partner_id","integer",NULL
+"public","base_partner_merge_line","id","integer",NULL
+"public","base_partner_merge_line","wizard_id","integer",NULL
+"public","base_partner_merge_line","min_id","integer",NULL
+"public","base_partner_merge_line","create_uid","integer",NULL
+"public","base_partner_merge_line","write_uid","integer",NULL
+"public","base_partner_merge_line","aggr_ids","character varying",NULL
+"public","base_partner_merge_line","create_date","timestamp without time zone",NULL
+"public","base_partner_merge_line","write_date","timestamp without time zone",NULL
+"public","bus_bus","id","integer",NULL
+"public","bus_bus","create_uid","integer",NULL
+"public","bus_bus","write_uid","integer",NULL
+"public","bus_bus","channel","character varying",NULL
+"public","bus_bus","message","character varying",NULL
+"public","bus_bus","create_date","timestamp without time zone",NULL
+"public","bus_bus","write_date","timestamp without time zone",NULL
+"public","change_password_own","id","integer",NULL
+"public","change_password_own","create_uid","integer",NULL
+"public","change_password_own","write_uid","integer",NULL
+"public","change_password_own","new_password","character varying",NULL
+"public","change_password_own","confirm_password","character varying",NULL
+"public","change_password_own","create_date","timestamp without time zone",NULL
+"public","change_password_own","write_date","timestamp without time zone",NULL
+"public","change_password_user","id","integer",NULL
+"public","change_password_user","wizard_id","integer",NULL
+"public","change_password_user","user_id","integer",NULL
+"public","change_password_user","create_uid","integer",NULL
+"public","change_password_user","write_uid","integer",NULL
+"public","change_password_user","user_login","character varying",NULL
+"public","change_password_user","new_passwd","character varying",NULL
+"public","change_password_user","create_date","timestamp without time zone",NULL
+"public","change_password_user","write_date","timestamp without time zone",NULL
+"public","change_password_wizard","id","integer",NULL
+"public","change_password_wizard","create_uid","integer",NULL
+"public","change_password_wizard","write_uid","integer",NULL
+"public","change_password_wizard","create_date","timestamp without time zone",NULL
+"public","change_password_wizard","write_date","timestamp without time zone",NULL
+"public","decimal_precision","id","integer",NULL
+"public","decimal_precision","digits","integer",NULL
+"public","decimal_precision","create_uid","integer",NULL
+"public","decimal_precision","write_uid","integer",NULL
+"public","decimal_precision","name","character varying",NULL
+"public","decimal_precision","create_date","timestamp without time zone",NULL
+"public","decimal_precision","write_date","timestamp without time zone",NULL
+"public","digest_digest","id","integer",NULL
+"public","digest_digest","company_id","integer",NULL
+"public","digest_digest","create_uid","integer",NULL
+"public","digest_digest","write_uid","integer",NULL
+"public","digest_digest","periodicity","character varying",NULL
+"public","digest_digest","state","character varying",NULL
+"public","digest_digest","next_run_date","date",NULL
+"public","digest_digest","name","jsonb",NULL
+"public","digest_digest","kpi_res_users_connected","boolean",NULL
+"public","digest_digest","kpi_mail_message_total","boolean",NULL
+"public","digest_digest","create_date","timestamp without time zone",NULL
+"public","digest_digest","write_date","timestamp without time zone",NULL
+"public","digest_digest_res_users_rel","digest_digest_id","integer",NULL
+"public","digest_digest_res_users_rel","res_users_id","integer",NULL
+"public","digest_tip","id","integer",NULL
+"public","digest_tip","sequence","integer",NULL
+"public","digest_tip","group_id","integer",NULL
+"public","digest_tip","create_uid","integer",NULL
+"public","digest_tip","write_uid","integer",NULL
+"public","digest_tip","name","jsonb",NULL
+"public","digest_tip","tip_description","jsonb",NULL
+"public","digest_tip","create_date","timestamp without time zone",NULL
+"public","digest_tip","write_date","timestamp without time zone",NULL
+"public","digest_tip_res_users_rel","digest_tip_id","integer",NULL
+"public","digest_tip_res_users_rel","res_users_id","integer",NULL
+"public","discuss_call_history","id","integer",NULL
+"public","discuss_call_history","channel_id","integer",NULL
+"public","discuss_call_history","start_call_message_id","integer",NULL
+"public","discuss_call_history","create_uid","integer",NULL
+"public","discuss_call_history","write_uid","integer",NULL
+"public","discuss_call_history","start_dt","timestamp without time zone",NULL
+"public","discuss_call_history","end_dt","timestamp without time zone",NULL
+"public","discuss_call_history","create_date","timestamp without time zone",NULL
+"public","discuss_call_history","write_date","timestamp without time zone",NULL
+"public","discuss_channel","id","integer",NULL
+"public","discuss_channel","parent_channel_id","integer",NULL
+"public","discuss_channel","from_message_id","integer",NULL
+"public","discuss_channel","group_public_id","integer",NULL
+"public","discuss_channel","create_uid","integer",NULL
+"public","discuss_channel","write_uid","integer",NULL
+"public","discuss_channel","name","character varying",NULL
+"public","discuss_channel","channel_type","character varying",NULL
+"public","discuss_channel","default_display_mode","character varying",NULL
+"public","discuss_channel","sfu_channel_uuid","character varying",NULL
+"public","discuss_channel","sfu_server_url","character varying",NULL
+"public","discuss_channel","uuid","character varying",50
+"public","discuss_channel","description","text",NULL
+"public","discuss_channel","active","boolean",NULL
+"public","discuss_channel","last_interest_dt","timestamp without time zone",NULL
+"public","discuss_channel","create_date","timestamp without time zone",NULL
+"public","discuss_channel","write_date","timestamp without time zone",NULL
+"public","discuss_channel_member","id","integer",NULL
+"public","discuss_channel_member","partner_id","integer",NULL
+"public","discuss_channel_member","guest_id","integer",NULL
+"public","discuss_channel_member","channel_id","integer",NULL
+"public","discuss_channel_member","fetched_message_id","integer",NULL
+"public","discuss_channel_member","seen_message_id","integer",NULL
+"public","discuss_channel_member","new_message_separator","integer",NULL
+"public","discuss_channel_member","rtc_inviting_session_id","integer",NULL
+"public","discuss_channel_member","create_uid","integer",NULL
+"public","discuss_channel_member","write_uid","integer",NULL
+"public","discuss_channel_member","custom_channel_name","character varying",NULL
+"public","discuss_channel_member","custom_notifications","character varying",NULL
+"public","discuss_channel_member","mute_until_dt","timestamp without time zone",NULL
+"public","discuss_channel_member","unpin_dt","timestamp without time zone",NULL
+"public","discuss_channel_member","last_interest_dt","timestamp without time zone",NULL
+"public","discuss_channel_member","last_seen_dt","timestamp without time zone",NULL
+"public","discuss_channel_member","create_date","timestamp without time zone",NULL
+"public","discuss_channel_member","write_date","timestamp without time zone",NULL
+"public","discuss_channel_res_groups_rel","discuss_channel_id","integer",NULL
+"public","discuss_channel_res_groups_rel","res_groups_id","integer",NULL
+"public","discuss_channel_rtc_session","id","integer",NULL
+"public","discuss_channel_rtc_session","channel_member_id","integer",NULL
+"public","discuss_channel_rtc_session","channel_id","integer",NULL
+"public","discuss_channel_rtc_session","partner_id","integer",NULL
+"public","discuss_channel_rtc_session","create_uid","integer",NULL
+"public","discuss_channel_rtc_session","write_uid","integer",NULL
+"public","discuss_channel_rtc_session","is_screen_sharing_on","boolean",NULL
+"public","discuss_channel_rtc_session","is_camera_on","boolean",NULL
+"public","discuss_channel_rtc_session","is_muted","boolean",NULL
+"public","discuss_channel_rtc_session","is_deaf","boolean",NULL
+"public","discuss_channel_rtc_session","write_date","timestamp without time zone",NULL
+"public","discuss_channel_rtc_session","create_date","timestamp without time zone",NULL
+"public","discuss_gif_favorite","id","integer",NULL
+"public","discuss_gif_favorite","create_uid","integer",NULL
+"public","discuss_gif_favorite","write_uid","integer",NULL
+"public","discuss_gif_favorite","tenor_gif_id","character varying",NULL
+"public","discuss_gif_favorite","create_date","timestamp without time zone",NULL
+"public","discuss_gif_favorite","write_date","timestamp without time zone",NULL
+"public","discuss_voice_metadata","id","integer",NULL
+"public","discuss_voice_metadata","attachment_id","integer",NULL
+"public","discuss_voice_metadata","create_uid","integer",NULL
+"public","discuss_voice_metadata","write_uid","integer",NULL
+"public","discuss_voice_metadata","create_date","timestamp without time zone",NULL
+"public","discuss_voice_metadata","write_date","timestamp without time zone",NULL
+"public","email_template_attachment_rel","email_template_id","integer",NULL
+"public","email_template_attachment_rel","attachment_id","integer",NULL
+"public","fetchmail_server","id","integer",NULL
+"public","fetchmail_server","port","integer",NULL
+"public","fetchmail_server","object_id","integer",NULL
+"public","fetchmail_server","priority","integer",NULL
+"public","fetchmail_server","create_uid","integer",NULL
+"public","fetchmail_server","write_uid","integer",NULL
+"public","fetchmail_server","name","character varying",NULL
+"public","fetchmail_server","state","character varying",NULL
+"public","fetchmail_server","server","character varying",NULL
+"public","fetchmail_server","server_type","character varying",NULL
+"public","fetchmail_server","user","character varying",NULL
+"public","fetchmail_server","password","character varying",NULL
+"public","fetchmail_server","script","character varying",NULL
+"public","fetchmail_server","error_message","text",NULL
+"public","fetchmail_server","configuration","text",NULL
+"public","fetchmail_server","active","boolean",NULL
+"public","fetchmail_server","is_ssl","boolean",NULL
+"public","fetchmail_server","attach","boolean",NULL
+"public","fetchmail_server","original","boolean",NULL
+"public","fetchmail_server","date","timestamp without time zone",NULL
+"public","fetchmail_server","error_date","timestamp without time zone",NULL
+"public","fetchmail_server","create_date","timestamp without time zone",NULL
+"public","fetchmail_server","write_date","timestamp without time zone",NULL
+"public","fetchmail_server","google_gmail_access_token_expiration","integer",NULL
+"public","fetchmail_server","google_gmail_refresh_token","character varying",NULL
+"public","fetchmail_server","google_gmail_access_token","character varying",NULL
+"public","fetchmail_server","microsoft_outlook_access_token_expiration","integer",NULL
+"public","fetchmail_server","microsoft_outlook_refresh_token","character varying",NULL
+"public","fetchmail_server","microsoft_outlook_access_token","character varying",NULL
+"public","html_editor_converter_test","id","integer",NULL
+"public","html_editor_converter_test","integer","integer",NULL
+"public","html_editor_converter_test","many2one","integer",NULL
+"public","html_editor_converter_test","create_uid","integer",NULL
+"public","html_editor_converter_test","write_uid","integer",NULL
+"public","html_editor_converter_test","char","character varying",NULL
+"public","html_editor_converter_test","selection_str","character varying",NULL
+"public","html_editor_converter_test","date","date",NULL
+"public","html_editor_converter_test","html","text",NULL
+"public","html_editor_converter_test","text","text",NULL
+"public","html_editor_converter_test","numeric","numeric",NULL
+"public","html_editor_converter_test","datetime","timestamp without time zone",NULL
+"public","html_editor_converter_test","create_date","timestamp without time zone",NULL
+"public","html_editor_converter_test","write_date","timestamp without time zone",NULL
+"public","html_editor_converter_test","float","double precision",NULL
+"public","html_editor_converter_test","binary","bytea",NULL
+"public","html_editor_converter_test_sub","id","integer",NULL
+"public","html_editor_converter_test_sub","create_uid","integer",NULL
+"public","html_editor_converter_test_sub","write_uid","integer",NULL
+"public","html_editor_converter_test_sub","name","character varying",NULL
+"public","html_editor_converter_test_sub","create_date","timestamp without time zone",NULL
+"public","html_editor_converter_test_sub","write_date","timestamp without time zone",NULL
+"public","iap_account","id","integer",NULL
+"public","iap_account","service_id","integer",NULL
+"public","iap_account","create_uid","integer",NULL
+"public","iap_account","write_uid","integer",NULL
+"public","iap_account","name","character varying",NULL
+"public","iap_account","account_token","character varying",43
+"public","iap_account","balance","character varying",NULL
+"public","iap_account","state","character varying",NULL
+"public","iap_account","service_locked","boolean",NULL
+"public","iap_account","create_date","timestamp without time zone",NULL
+"public","iap_account","write_date","timestamp without time zone",NULL
+"public","iap_account","warning_threshold","double precision",NULL
+"public","iap_account","sender_name","character varying",NULL
+"public","iap_account_res_company_rel","iap_account_id","integer",NULL
+"public","iap_account_res_company_rel","res_company_id","integer",NULL
+"public","iap_account_res_users_rel","iap_account_id","integer",NULL
+"public","iap_account_res_users_rel","res_users_id","integer",NULL
+"public","iap_service","id","integer",NULL
+"public","iap_service","create_uid","integer",NULL
+"public","iap_service","write_uid","integer",NULL
+"public","iap_service","name","character varying",NULL
+"public","iap_service","technical_name","character varying",NULL
+"public","iap_service","description","jsonb",NULL
+"public","iap_service","unit_name","jsonb",NULL
+"public","iap_service","integer_balance","boolean",NULL
+"public","iap_service","create_date","timestamp without time zone",NULL
+"public","iap_service","write_date","timestamp without time zone",NULL
+"public","ir_act_client","id","integer",NULL
+"public","ir_act_client","binding_model_id","integer",NULL
+"public","ir_act_client","create_uid","integer",NULL
+"public","ir_act_client","write_uid","integer",NULL
+"public","ir_act_client","type","character varying",NULL
+"public","ir_act_client","path","character varying",NULL
+"public","ir_act_client","binding_type","character varying",NULL
+"public","ir_act_client","binding_view_types","character varying",NULL
+"public","ir_act_client","name","jsonb",NULL
+"public","ir_act_client","help","jsonb",NULL
+"public","ir_act_client","create_date","timestamp without time zone",NULL
+"public","ir_act_client","write_date","timestamp without time zone",NULL
+"public","ir_act_client","tag","character varying",NULL
+"public","ir_act_client","target","character varying",NULL
+"public","ir_act_client","res_model","character varying",NULL
+"public","ir_act_client","context","character varying",NULL
+"public","ir_act_client","params_store","bytea",NULL
+"public","ir_act_report_xml","id","integer",NULL
+"public","ir_act_report_xml","binding_model_id","integer",NULL
+"public","ir_act_report_xml","create_uid","integer",NULL
+"public","ir_act_report_xml","write_uid","integer",NULL
+"public","ir_act_report_xml","type","character varying",NULL
+"public","ir_act_report_xml","path","character varying",NULL
+"public","ir_act_report_xml","binding_type","character varying",NULL
+"public","ir_act_report_xml","binding_view_types","character varying",NULL
+"public","ir_act_report_xml","name","jsonb",NULL
+"public","ir_act_report_xml","help","jsonb",NULL
+"public","ir_act_report_xml","create_date","timestamp without time zone",NULL
+"public","ir_act_report_xml","write_date","timestamp without time zone",NULL
+"public","ir_act_report_xml","paperformat_id","integer",NULL
+"public","ir_act_report_xml","model","character varying",NULL
+"public","ir_act_report_xml","report_type","character varying",NULL
+"public","ir_act_report_xml","report_name","character varying",NULL
+"public","ir_act_report_xml","report_file","character varying",NULL
+"public","ir_act_report_xml","attachment","character varying",NULL
+"public","ir_act_report_xml","domain","character varying",NULL
+"public","ir_act_report_xml","print_report_name","jsonb",NULL
+"public","ir_act_report_xml","multi","boolean",NULL
+"public","ir_act_report_xml","attachment_use","boolean",NULL
+"public","ir_act_server","id","integer",NULL
+"public","ir_act_server","binding_model_id","integer",NULL
+"public","ir_act_server","create_uid","integer",NULL
+"public","ir_act_server","write_uid","integer",NULL
+"public","ir_act_server","type","character varying",NULL
+"public","ir_act_server","path","character varying",NULL
+"public","ir_act_server","binding_type","character varying",NULL
+"public","ir_act_server","binding_view_types","character varying",NULL
+"public","ir_act_server","name","jsonb",NULL
+"public","ir_act_server","help","jsonb",NULL
+"public","ir_act_server","create_date","timestamp without time zone",NULL
+"public","ir_act_server","write_date","timestamp without time zone",NULL
+"public","ir_act_server","sequence","integer",NULL
+"public","ir_act_server","model_id","integer",NULL
+"public","ir_act_server","parent_id","integer",NULL
+"public","ir_act_server","crud_model_id","integer",NULL
+"public","ir_act_server","link_field_id","integer",NULL
+"public","ir_act_server","update_field_id","integer",NULL
+"public","ir_act_server","update_related_model_id","integer",NULL
+"public","ir_act_server","sequence_id","integer",NULL
+"public","ir_act_server","selection_value","integer",NULL
+"public","ir_act_server","automated_name","character varying",NULL
+"public","ir_act_server","usage","character varying",NULL
+"public","ir_act_server","state","character varying",NULL
+"public","ir_act_server","update_path","character varying",NULL
+"public","ir_act_server","update_m2m_operation","character varying",NULL
+"public","ir_act_server","update_boolean_value","character varying",NULL
+"public","ir_act_server","evaluation_type","character varying",NULL
+"public","ir_act_server","resource_ref","character varying",NULL
+"public","ir_act_server","webhook_url","character varying",NULL
+"public","ir_act_server","code","text",NULL
+"public","ir_act_server","value","text",NULL
+"public","ir_act_server","html_value","text",NULL
+"public","ir_act_server","activity_user_id","integer",NULL
+"public","ir_act_server","activity_type_id","integer",NULL
+"public","ir_act_server","template_id","integer",NULL
+"public","ir_act_server","activity_date_deadline_range","integer",NULL
+"public","ir_act_server","activity_summary","character varying",NULL
+"public","ir_act_server","followers_type","character varying",NULL
+"public","ir_act_server","followers_partner_field_name","character varying",NULL
+"public","ir_act_server","mail_post_method","character varying",NULL
+"public","ir_act_server","activity_date_deadline_range_type","character varying",NULL
+"public","ir_act_server","activity_user_type","character varying",NULL
+"public","ir_act_server","activity_user_field_name","character varying",NULL
+"public","ir_act_server","activity_note","text",NULL
+"public","ir_act_server","mail_post_autofollow","boolean",NULL
+"public","ir_act_server","sms_template_id","integer",NULL
+"public","ir_act_server","sms_method","character varying",NULL
+"public","ir_act_server_group_rel","act_id","integer",NULL
+"public","ir_act_server_group_rel","gid","integer",NULL
+"public","ir_act_server_res_partner_rel","ir_act_server_id","integer",NULL
+"public","ir_act_server_res_partner_rel","res_partner_id","integer",NULL
+"public","ir_act_server_webhook_field_rel","server_id","integer",NULL
+"public","ir_act_server_webhook_field_rel","field_id","integer",NULL
+"public","ir_act_url","id","integer",NULL
+"public","ir_act_url","binding_model_id","integer",NULL
+"public","ir_act_url","create_uid","integer",NULL
+"public","ir_act_url","write_uid","integer",NULL
+"public","ir_act_url","type","character varying",NULL
+"public","ir_act_url","path","character varying",NULL
+"public","ir_act_url","binding_type","character varying",NULL
+"public","ir_act_url","binding_view_types","character varying",NULL
+"public","ir_act_url","name","jsonb",NULL
+"public","ir_act_url","help","jsonb",NULL
+"public","ir_act_url","create_date","timestamp without time zone",NULL
+"public","ir_act_url","write_date","timestamp without time zone",NULL
+"public","ir_act_url","target","character varying",NULL
+"public","ir_act_url","url","text",NULL
+"public","ir_act_window","id","integer",NULL
+"public","ir_act_window","binding_model_id","integer",NULL
+"public","ir_act_window","create_uid","integer",NULL
+"public","ir_act_window","write_uid","integer",NULL
+"public","ir_act_window","type","character varying",NULL
+"public","ir_act_window","path","character varying",NULL
+"public","ir_act_window","binding_type","character varying",NULL
+"public","ir_act_window","binding_view_types","character varying",NULL
+"public","ir_act_window","name","jsonb",NULL
+"public","ir_act_window","help","jsonb",NULL
+"public","ir_act_window","create_date","timestamp without time zone",NULL
+"public","ir_act_window","write_date","timestamp without time zone",NULL
+"public","ir_act_window","view_id","integer",NULL
+"public","ir_act_window","res_id","integer",NULL
+"public","ir_act_window","limit","integer",NULL
+"public","ir_act_window","search_view_id","integer",NULL
+"public","ir_act_window","domain","character varying",NULL
+"public","ir_act_window","context","character varying",NULL
+"public","ir_act_window","res_model","character varying",NULL
+"public","ir_act_window","target","character varying",NULL
+"public","ir_act_window","view_mode","character varying",NULL
+"public","ir_act_window","mobile_view_mode","character varying",NULL
+"public","ir_act_window","usage","character varying",NULL
+"public","ir_act_window","filter","boolean",NULL
+"public","ir_act_window","cache","boolean",NULL
+"public","ir_act_window_group_rel","act_id","integer",NULL
+"public","ir_act_window_group_rel","gid","integer",NULL
+"public","ir_act_window_view","id","integer",NULL
+"public","ir_act_window_view","sequence","integer",NULL
+"public","ir_act_window_view","view_id","integer",NULL
+"public","ir_act_window_view","act_window_id","integer",NULL
+"public","ir_act_window_view","create_uid","integer",NULL
+"public","ir_act_window_view","write_uid","integer",NULL
+"public","ir_act_window_view","view_mode","character varying",NULL
+"public","ir_act_window_view","multi","boolean",NULL
+"public","ir_act_window_view","create_date","timestamp without time zone",NULL
+"public","ir_act_window_view","write_date","timestamp without time zone",NULL
+"public","ir_actions","id","integer",NULL
+"public","ir_actions","binding_model_id","integer",NULL
+"public","ir_actions","create_uid","integer",NULL
+"public","ir_actions","write_uid","integer",NULL
+"public","ir_actions","type","character varying",NULL
+"public","ir_actions","path","character varying",NULL
+"public","ir_actions","binding_type","character varying",NULL
+"public","ir_actions","binding_view_types","character varying",NULL
+"public","ir_actions","name","jsonb",NULL
+"public","ir_actions","help","jsonb",NULL
+"public","ir_actions","create_date","timestamp without time zone",NULL
+"public","ir_actions","write_date","timestamp without time zone",NULL
+"public","ir_actions_server_history","id","integer",NULL
+"public","ir_actions_server_history","action_id","integer",NULL
+"public","ir_actions_server_history","create_uid","integer",NULL
+"public","ir_actions_server_history","write_uid","integer",NULL
+"public","ir_actions_server_history","code","text",NULL
+"public","ir_actions_server_history","create_date","timestamp without time zone",NULL
+"public","ir_actions_server_history","write_date","timestamp without time zone",NULL
+"public","ir_actions_todo","id","integer",NULL
+"public","ir_actions_todo","action_id","integer",NULL
+"public","ir_actions_todo","sequence","integer",NULL
+"public","ir_actions_todo","create_uid","integer",NULL
+"public","ir_actions_todo","write_uid","integer",NULL
+"public","ir_actions_todo","state","character varying",NULL
+"public","ir_actions_todo","name","character varying",NULL
+"public","ir_actions_todo","create_date","timestamp without time zone",NULL
+"public","ir_actions_todo","write_date","timestamp without time zone",NULL
+"public","ir_asset","id","integer",NULL
+"public","ir_asset","sequence","integer",NULL
+"public","ir_asset","create_uid","integer",NULL
+"public","ir_asset","write_uid","integer",NULL
+"public","ir_asset","name","character varying",NULL
+"public","ir_asset","bundle","character varying",NULL
+"public","ir_asset","directive","character varying",NULL
+"public","ir_asset","path","character varying",NULL
+"public","ir_asset","target","character varying",NULL
+"public","ir_asset","active","boolean",NULL
+"public","ir_asset","create_date","timestamp without time zone",NULL
+"public","ir_asset","write_date","timestamp without time zone",NULL
+"public","ir_attachment","id","integer",NULL
+"public","ir_attachment","res_id","integer",NULL
+"public","ir_attachment","company_id","integer",NULL
+"public","ir_attachment","file_size","integer",NULL
+"public","ir_attachment","create_uid","integer",NULL
+"public","ir_attachment","write_uid","integer",NULL
+"public","ir_attachment","name","character varying",NULL
+"public","ir_attachment","res_model","character varying",NULL
+"public","ir_attachment","res_field","character varying",NULL
+"public","ir_attachment","type","character varying",NULL
+"public","ir_attachment","url","character varying",1024
+"public","ir_attachment","access_token","character varying",NULL
+"public","ir_attachment","store_fname","character varying",NULL
+"public","ir_attachment","checksum","character varying",40
+"public","ir_attachment","mimetype","character varying",NULL
+"public","ir_attachment","description","text",NULL
+"public","ir_attachment","index_content","text",NULL
+"public","ir_attachment","public","boolean",NULL
+"public","ir_attachment","create_date","timestamp without time zone",NULL
+"public","ir_attachment","write_date","timestamp without time zone",NULL
+"public","ir_attachment","db_datas","bytea",NULL
+"public","ir_attachment","original_id","integer",NULL
+"public","ir_config_parameter","id","integer",NULL
+"public","ir_config_parameter","create_uid","integer",NULL
+"public","ir_config_parameter","write_uid","integer",NULL
+"public","ir_config_parameter","key","character varying",NULL
+"public","ir_config_parameter","value","text",NULL
+"public","ir_config_parameter","create_date","timestamp without time zone",NULL
+"public","ir_config_parameter","write_date","timestamp without time zone",NULL
+"public","ir_cron","id","integer",NULL
+"public","ir_cron","ir_actions_server_id","integer",NULL
+"public","ir_cron","user_id","integer",NULL
+"public","ir_cron","interval_number","integer",NULL
+"public","ir_cron","priority","integer",NULL
+"public","ir_cron","failure_count","integer",NULL
+"public","ir_cron","create_uid","integer",NULL
+"public","ir_cron","write_uid","integer",NULL
+"public","ir_cron","cron_name","character varying",NULL
+"public","ir_cron","interval_type","character varying",NULL
+"public","ir_cron","active","boolean",NULL
+"public","ir_cron","nextcall","timestamp without time zone",NULL
+"public","ir_cron","lastcall","timestamp without time zone",NULL
+"public","ir_cron","first_failure_date","timestamp without time zone",NULL
+"public","ir_cron","create_date","timestamp without time zone",NULL
+"public","ir_cron","write_date","timestamp without time zone",NULL
+"public","ir_cron_progress","id","integer",NULL
+"public","ir_cron_progress","cron_id","integer",NULL
+"public","ir_cron_progress","remaining","integer",NULL
+"public","ir_cron_progress","done","integer",NULL
+"public","ir_cron_progress","timed_out_counter","integer",NULL
+"public","ir_cron_progress","create_uid","integer",NULL
+"public","ir_cron_progress","write_uid","integer",NULL
+"public","ir_cron_progress","deactivate","boolean",NULL
+"public","ir_cron_progress","create_date","timestamp without time zone",NULL
+"public","ir_cron_progress","write_date","timestamp without time zone",NULL
+"public","ir_cron_trigger","id","integer",NULL
+"public","ir_cron_trigger","cron_id","integer",NULL
+"public","ir_cron_trigger","create_uid","integer",NULL
+"public","ir_cron_trigger","write_uid","integer",NULL
+"public","ir_cron_trigger","call_at","timestamp without time zone",NULL
+"public","ir_cron_trigger","create_date","timestamp without time zone",NULL
+"public","ir_cron_trigger","write_date","timestamp without time zone",NULL
+"public","ir_default","id","integer",NULL
+"public","ir_default","field_id","integer",NULL
+"public","ir_default","user_id","integer",NULL
+"public","ir_default","company_id","integer",NULL
+"public","ir_default","create_uid","integer",NULL
+"public","ir_default","write_uid","integer",NULL
+"public","ir_default","condition","character varying",NULL
+"public","ir_default","json_value","character varying",NULL
+"public","ir_default","create_date","timestamp without time zone",NULL
+"public","ir_default","write_date","timestamp without time zone",NULL
+"public","ir_demo","id","integer",NULL
+"public","ir_demo","create_uid","integer",NULL
+"public","ir_demo","write_uid","integer",NULL
+"public","ir_demo","create_date","timestamp without time zone",NULL
+"public","ir_demo","write_date","timestamp without time zone",NULL
+"public","ir_demo_failure","id","integer",NULL
+"public","ir_demo_failure","module_id","integer",NULL
+"public","ir_demo_failure","wizard_id","integer",NULL
+"public","ir_demo_failure","create_uid","integer",NULL
+"public","ir_demo_failure","write_uid","integer",NULL
+"public","ir_demo_failure","error","character varying",NULL
+"public","ir_demo_failure","create_date","timestamp without time zone",NULL
+"public","ir_demo_failure","write_date","timestamp without time zone",NULL
+"public","ir_demo_failure_wizard","id","integer",NULL
+"public","ir_demo_failure_wizard","create_uid","integer",NULL
+"public","ir_demo_failure_wizard","write_uid","integer",NULL
+"public","ir_demo_failure_wizard","create_date","timestamp without time zone",NULL
+"public","ir_demo_failure_wizard","write_date","timestamp without time zone",NULL
+"public","ir_embedded_actions","id","integer",NULL
+"public","ir_embedded_actions","sequence","integer",NULL
+"public","ir_embedded_actions","parent_action_id","integer",NULL
+"public","ir_embedded_actions","parent_res_id","integer",NULL
+"public","ir_embedded_actions","action_id","integer",NULL
+"public","ir_embedded_actions","user_id","integer",NULL
+"public","ir_embedded_actions","create_uid","integer",NULL
+"public","ir_embedded_actions","write_uid","integer",NULL
+"public","ir_embedded_actions","parent_res_model","character varying",NULL
+"public","ir_embedded_actions","python_method","character varying",NULL
+"public","ir_embedded_actions","default_view_mode","character varying",NULL
+"public","ir_embedded_actions","domain","character varying",NULL
+"public","ir_embedded_actions","context","character varying",NULL
+"public","ir_embedded_actions","name","jsonb",NULL
+"public","ir_embedded_actions","create_date","timestamp without time zone",NULL
+"public","ir_embedded_actions","write_date","timestamp without time zone",NULL
+"public","ir_embedded_actions_res_groups_rel","ir_embedded_actions_id","integer",NULL
+"public","ir_embedded_actions_res_groups_rel","res_groups_id","integer",NULL
+"public","ir_exports","id","integer",NULL
+"public","ir_exports","create_uid","integer",NULL
+"public","ir_exports","write_uid","integer",NULL
+"public","ir_exports","name","character varying",NULL
+"public","ir_exports","resource","character varying",NULL
+"public","ir_exports","create_date","timestamp without time zone",NULL
+"public","ir_exports","write_date","timestamp without time zone",NULL
+"public","ir_exports_line","id","integer",NULL
+"public","ir_exports_line","export_id","integer",NULL
+"public","ir_exports_line","create_uid","integer",NULL
+"public","ir_exports_line","write_uid","integer",NULL
+"public","ir_exports_line","name","character varying",NULL
+"public","ir_exports_line","create_date","timestamp without time zone",NULL
+"public","ir_exports_line","write_date","timestamp without time zone",NULL
+"public","ir_filters","id","integer",NULL
+"public","ir_filters","action_id","integer",NULL
+"public","ir_filters","embedded_action_id","integer",NULL
+"public","ir_filters","embedded_parent_res_id","integer",NULL
+"public","ir_filters","create_uid","integer",NULL
+"public","ir_filters","write_uid","integer",NULL
+"public","ir_filters","name","character varying",NULL
+"public","ir_filters","sort","character varying",NULL
+"public","ir_filters","model_id","character varying",NULL
+"public","ir_filters","domain","text",NULL
+"public","ir_filters","context","text",NULL
+"public","ir_filters","is_default","boolean",NULL
+"public","ir_filters","active","boolean",NULL
+"public","ir_filters","create_date","timestamp without time zone",NULL
+"public","ir_filters","write_date","timestamp without time zone",NULL
+"public","ir_filters_res_users_rel","ir_filters_id","integer",NULL
+"public","ir_filters_res_users_rel","res_users_id","integer",NULL
+"public","ir_logging","id","integer",NULL
+"public","ir_logging","create_uid","integer",NULL
+"public","ir_logging","write_uid","integer",NULL
+"public","ir_logging","name","character varying",NULL
+"public","ir_logging","type","character varying",NULL
+"public","ir_logging","dbname","character varying",NULL
+"public","ir_logging","level","character varying",NULL
+"public","ir_logging","path","character varying",NULL
+"public","ir_logging","func","character varying",NULL
+"public","ir_logging","line","character varying",NULL
+"public","ir_logging","message","text",NULL
+"public","ir_logging","create_date","timestamp without time zone",NULL
+"public","ir_logging","write_date","timestamp without time zone",NULL
+"public","ir_mail_server","id","integer",NULL
+"public","ir_mail_server","smtp_port","integer",NULL
+"public","ir_mail_server","sequence","integer",NULL
+"public","ir_mail_server","create_uid","integer",NULL
+"public","ir_mail_server","write_uid","integer",NULL
+"public","ir_mail_server","name","character varying",NULL
+"public","ir_mail_server","from_filter","character varying",NULL
+"public","ir_mail_server","smtp_host","character varying",NULL
+"public","ir_mail_server","smtp_authentication","character varying",NULL
+"public","ir_mail_server","smtp_user","character varying",NULL
+"public","ir_mail_server","smtp_pass","character varying",NULL
+"public","ir_mail_server","smtp_encryption","character varying",NULL
+"public","ir_mail_server","smtp_debug","boolean",NULL
+"public","ir_mail_server","active","boolean",NULL
+"public","ir_mail_server","create_date","timestamp without time zone",NULL
+"public","ir_mail_server","write_date","timestamp without time zone",NULL
+"public","ir_mail_server","max_email_size","double precision",NULL
+"public","ir_mail_server","smtp_ssl_certificate","bytea",NULL
+"public","ir_mail_server","smtp_ssl_private_key","bytea",NULL
+"public","ir_mail_server","owner_user_id","integer",NULL
+"public","ir_mail_server","owner_limit_count","integer",NULL
+"public","ir_mail_server","owner_limit_time","timestamp without time zone",NULL
+"public","ir_mail_server","google_gmail_access_token_expiration","integer",NULL
+"public","ir_mail_server","google_gmail_refresh_token","character varying",NULL
+"public","ir_mail_server","google_gmail_access_token","character varying",NULL
+"public","ir_mail_server","microsoft_outlook_access_token_expiration","integer",NULL
+"public","ir_mail_server","microsoft_outlook_refresh_token","character varying",NULL
+"public","ir_mail_server","microsoft_outlook_access_token","character varying",NULL
+"public","ir_model","id","integer",NULL
+"public","ir_model","create_uid","integer",NULL
+"public","ir_model","write_uid","integer",NULL
+"public","ir_model","model","character varying",NULL
+"public","ir_model","order","character varying",NULL
+"public","ir_model","state","character varying",NULL
+"public","ir_model","fold_name","character varying",NULL
+"public","ir_model","name","jsonb",NULL
+"public","ir_model","info","text",NULL
+"public","ir_model","abstract","boolean",NULL
+"public","ir_model","transient","boolean",NULL
+"public","ir_model","create_date","timestamp without time zone",NULL
+"public","ir_model","write_date","timestamp without time zone",NULL
+"public","ir_model","is_mail_thread","boolean",NULL
+"public","ir_model","is_mail_activity","boolean",NULL
+"public","ir_model","is_mail_blacklist","boolean",NULL
+"public","ir_model_access","id","integer",NULL
+"public","ir_model_access","model_id","integer",NULL
+"public","ir_model_access","group_id","integer",NULL
+"public","ir_model_access","create_uid","integer",NULL
+"public","ir_model_access","write_uid","integer",NULL
+"public","ir_model_access","name","character varying",NULL
+"public","ir_model_access","active","boolean",NULL
+"public","ir_model_access","perm_read","boolean",NULL
+"public","ir_model_access","perm_write","boolean",NULL
+"public","ir_model_access","perm_create","boolean",NULL
+"public","ir_model_access","perm_unlink","boolean",NULL
+"public","ir_model_access","create_date","timestamp without time zone",NULL
+"public","ir_model_access","write_date","timestamp without time zone",NULL
+"public","ir_model_constraint","id","integer",NULL
+"public","ir_model_constraint","model","integer",NULL
+"public","ir_model_constraint","module","integer",NULL
+"public","ir_model_constraint","create_uid","integer",NULL
+"public","ir_model_constraint","write_uid","integer",NULL
+"public","ir_model_constraint","name","character varying",NULL
+"public","ir_model_constraint","definition","character varying",NULL
+"public","ir_model_constraint","type","character varying",1
+"public","ir_model_constraint","message","jsonb",NULL
+"public","ir_model_constraint","create_date","timestamp without time zone",NULL
+"public","ir_model_constraint","write_date","timestamp without time zone",NULL
+"public","ir_model_data","id","integer",NULL
+"public","ir_model_data","create_uid","integer",NULL
+"public","ir_model_data","create_date","timestamp without time zone",NULL
+"public","ir_model_data","write_date","timestamp without time zone",NULL
+"public","ir_model_data","write_uid","integer",NULL
+"public","ir_model_data","res_id","integer",NULL
+"public","ir_model_data","noupdate","boolean",NULL
+"public","ir_model_data","name","character varying",NULL
+"public","ir_model_data","module","character varying",NULL
+"public","ir_model_data","model","character varying",NULL
+"public","ir_model_fields","id","integer",NULL
+"public","ir_model_fields","relation_field_id","integer",NULL
+"public","ir_model_fields","model_id","integer",NULL
+"public","ir_model_fields","related_field_id","integer",NULL
+"public","ir_model_fields","size","integer",NULL
+"public","ir_model_fields","create_uid","integer",NULL
+"public","ir_model_fields","write_uid","integer",NULL
+"public","ir_model_fields","name","character varying",NULL
+"public","ir_model_fields","model","character varying",NULL
+"public","ir_model_fields","relation","character varying",NULL
+"public","ir_model_fields","relation_field","character varying",NULL
+"public","ir_model_fields","ttype","character varying",NULL
+"public","ir_model_fields","related","character varying",NULL
+"public","ir_model_fields","translate","character varying",NULL
+"public","ir_model_fields","state","character varying",NULL
+"public","ir_model_fields","on_delete","character varying",NULL
+"public","ir_model_fields","domain","character varying",NULL
+"public","ir_model_fields","relation_table","character varying",NULL
+"public","ir_model_fields","column1","character varying",NULL
+"public","ir_model_fields","column2","character varying",NULL
+"public","ir_model_fields","depends","character varying",NULL
+"public","ir_model_fields","currency_field","character varying",NULL
+"public","ir_model_fields","field_description","jsonb",NULL
+"public","ir_model_fields","help","jsonb",NULL
+"public","ir_model_fields","compute","text",NULL
+"public","ir_model_fields","copied","boolean",NULL
+"public","ir_model_fields","required","boolean",NULL
+"public","ir_model_fields","readonly","boolean",NULL
+"public","ir_model_fields","index","boolean",NULL
+"public","ir_model_fields","company_dependent","boolean",NULL
+"public","ir_model_fields","group_expand","boolean",NULL
+"public","ir_model_fields","selectable","boolean",NULL
+"public","ir_model_fields","store","boolean",NULL
+"public","ir_model_fields","sanitize","boolean",NULL
+"public","ir_model_fields","sanitize_overridable","boolean",NULL
+"public","ir_model_fields","sanitize_tags","boolean",NULL
+"public","ir_model_fields","sanitize_attributes","boolean",NULL
+"public","ir_model_fields","sanitize_style","boolean",NULL
+"public","ir_model_fields","sanitize_form","boolean",NULL
+"public","ir_model_fields","strip_style","boolean",NULL
+"public","ir_model_fields","strip_classes","boolean",NULL
+"public","ir_model_fields","create_date","timestamp without time zone",NULL
+"public","ir_model_fields","write_date","timestamp without time zone",NULL
+"public","ir_model_fields","tracking","integer",NULL
+"public","ir_model_fields_group_rel","field_id","integer",NULL
+"public","ir_model_fields_group_rel","group_id","integer",NULL
+"public","ir_model_fields_selection","id","integer",NULL
+"public","ir_model_fields_selection","field_id","integer",NULL
+"public","ir_model_fields_selection","sequence","integer",NULL
+"public","ir_model_fields_selection","create_uid","integer",NULL
+"public","ir_model_fields_selection","write_uid","integer",NULL
+"public","ir_model_fields_selection","value","character varying",NULL
+"public","ir_model_fields_selection","name","jsonb",NULL
+"public","ir_model_fields_selection","create_date","timestamp without time zone",NULL
+"public","ir_model_fields_selection","write_date","timestamp without time zone",NULL
+"public","ir_model_inherit","id","integer",NULL
+"public","ir_model_inherit","model_id","integer",NULL
+"public","ir_model_inherit","parent_id","integer",NULL
+"public","ir_model_inherit","parent_field_id","integer",NULL
+"public","ir_model_relation","id","integer",NULL
+"public","ir_model_relation","model","integer",NULL
+"public","ir_model_relation","module","integer",NULL
+"public","ir_model_relation","create_uid","integer",NULL
+"public","ir_model_relation","write_uid","integer",NULL
+"public","ir_model_relation","name","character varying",NULL
+"public","ir_model_relation","write_date","timestamp without time zone",NULL
+"public","ir_model_relation","create_date","timestamp without time zone",NULL
+"public","ir_module_category","id","integer",NULL
+"public","ir_module_category","create_uid","integer",NULL
+"public","ir_module_category","create_date","timestamp without time zone",NULL
+"public","ir_module_category","write_date","timestamp without time zone",NULL
+"public","ir_module_category","write_uid","integer",NULL
+"public","ir_module_category","parent_id","integer",NULL
+"public","ir_module_category","name","jsonb",NULL
+"public","ir_module_category","sequence","integer",NULL
+"public","ir_module_category","description","jsonb",NULL
+"public","ir_module_category","visible","boolean",NULL
+"public","ir_module_category","exclusive","boolean",NULL
+"public","ir_module_module","id","integer",NULL
+"public","ir_module_module","create_uid","integer",NULL
+"public","ir_module_module","create_date","timestamp without time zone",NULL
+"public","ir_module_module","write_date","timestamp without time zone",NULL
+"public","ir_module_module","write_uid","integer",NULL
+"public","ir_module_module","website","character varying",NULL
+"public","ir_module_module","summary","jsonb",NULL
+"public","ir_module_module","name","character varying",NULL
+"public","ir_module_module","author","character varying",NULL
+"public","ir_module_module","icon","character varying",NULL
+"public","ir_module_module","state","character varying",16
+"public","ir_module_module","latest_version","character varying",NULL
+"public","ir_module_module","shortdesc","jsonb",NULL
+"public","ir_module_module","category_id","integer",NULL
+"public","ir_module_module","description","jsonb",NULL
+"public","ir_module_module","application","boolean",NULL
+"public","ir_module_module","demo","boolean",NULL
+"public","ir_module_module","web","boolean",NULL
+"public","ir_module_module","license","character varying",32
+"public","ir_module_module","sequence","integer",NULL
+"public","ir_module_module","auto_install","boolean",NULL
+"public","ir_module_module","to_buy","boolean",NULL
+"public","ir_module_module","maintainer","character varying",NULL
+"public","ir_module_module","published_version","character varying",NULL
+"public","ir_module_module","url","character varying",NULL
+"public","ir_module_module","contributors","text",NULL
+"public","ir_module_module","menus_by_module","text",NULL
+"public","ir_module_module","reports_by_module","text",NULL
+"public","ir_module_module","views_by_module","text",NULL
+"public","ir_module_module","module_type","character varying",NULL
+"public","ir_module_module","imported","boolean",NULL
+"public","ir_module_module_dependency","id","integer",NULL
+"public","ir_module_module_dependency","name","character varying",NULL
+"public","ir_module_module_dependency","module_id","integer",NULL
+"public","ir_module_module_dependency","auto_install_required","boolean",NULL
+"public","ir_module_module_exclusion","id","integer",NULL
+"public","ir_module_module_exclusion","module_id","integer",NULL
+"public","ir_module_module_exclusion","create_uid","integer",NULL
+"public","ir_module_module_exclusion","write_uid","integer",NULL
+"public","ir_module_module_exclusion","name","character varying",NULL
+"public","ir_module_module_exclusion","create_date","timestamp without time zone",NULL
+"public","ir_module_module_exclusion","write_date","timestamp without time zone",NULL
+"public","ir_profile","id","integer",NULL
+"public","ir_profile","sql_count","integer",NULL
+"public","ir_profile","entry_count","integer",NULL
+"public","ir_profile","session","character varying",NULL
+"public","ir_profile","name","character varying",NULL
+"public","ir_profile","init_stack_trace","text",NULL
+"public","ir_profile","sql","text",NULL
+"public","ir_profile","traces_async","text",NULL
+"public","ir_profile","traces_sync","text",NULL
+"public","ir_profile","others","text",NULL
+"public","ir_profile","qweb","text",NULL
+"public","ir_profile","duration","numeric",NULL
+"public","ir_profile","cpu_duration","numeric",NULL
+"public","ir_profile","create_date","timestamp without time zone",NULL
+"public","ir_rule","id","integer",NULL
+"public","ir_rule","model_id","integer",NULL
+"public","ir_rule","create_uid","integer",NULL
+"public","ir_rule","write_uid","integer",NULL
+"public","ir_rule","name","character varying",NULL
+"public","ir_rule","domain_force","text",NULL
+"public","ir_rule","active","boolean",NULL
+"public","ir_rule","perm_read","boolean",NULL
+"public","ir_rule","perm_write","boolean",NULL
+"public","ir_rule","perm_create","boolean",NULL
+"public","ir_rule","perm_unlink","boolean",NULL
+"public","ir_rule","global","boolean",NULL
+"public","ir_rule","create_date","timestamp without time zone",NULL
+"public","ir_rule","write_date","timestamp without time zone",NULL
+"public","ir_sequence","id","integer",NULL
+"public","ir_sequence","number_next","integer",NULL
+"public","ir_sequence","number_increment","integer",NULL
+"public","ir_sequence","padding","integer",NULL
+"public","ir_sequence","company_id","integer",NULL
+"public","ir_sequence","create_uid","integer",NULL
+"public","ir_sequence","write_uid","integer",NULL
+"public","ir_sequence","name","character varying",NULL
+"public","ir_sequence","code","character varying",NULL
+"public","ir_sequence","implementation","character varying",NULL
+"public","ir_sequence","prefix","character varying",NULL
+"public","ir_sequence","suffix","character varying",NULL
+"public","ir_sequence","active","boolean",NULL
+"public","ir_sequence","use_date_range","boolean",NULL
+"public","ir_sequence","create_date","timestamp without time zone",NULL
+"public","ir_sequence","write_date","timestamp without time zone",NULL
+"public","ir_sequence_date_range","id","integer",NULL
+"public","ir_sequence_date_range","sequence_id","integer",NULL
+"public","ir_sequence_date_range","number_next","integer",NULL
+"public","ir_sequence_date_range","create_uid","integer",NULL
+"public","ir_sequence_date_range","write_uid","integer",NULL
+"public","ir_sequence_date_range","date_from","date",NULL
+"public","ir_sequence_date_range","date_to","date",NULL
+"public","ir_sequence_date_range","create_date","timestamp without time zone",NULL
+"public","ir_sequence_date_range","write_date","timestamp without time zone",NULL
+"public","ir_ui_menu","id","integer",NULL
+"public","ir_ui_menu","sequence","integer",NULL
+"public","ir_ui_menu","parent_id","integer",NULL
+"public","ir_ui_menu","create_uid","integer",NULL
+"public","ir_ui_menu","write_uid","integer",NULL
+"public","ir_ui_menu","parent_path","character varying",NULL
+"public","ir_ui_menu","web_icon","character varying",NULL
+"public","ir_ui_menu","action","character varying",NULL
+"public","ir_ui_menu","name","jsonb",NULL
+"public","ir_ui_menu","active","boolean",NULL
+"public","ir_ui_menu","create_date","timestamp without time zone",NULL
+"public","ir_ui_menu","write_date","timestamp without time zone",NULL
+"public","ir_ui_menu_group_rel","menu_id","integer",NULL
+"public","ir_ui_menu_group_rel","gid","integer",NULL
+"public","ir_ui_view","id","integer",NULL
+"public","ir_ui_view","priority","integer",NULL
+"public","ir_ui_view","inherit_id","integer",NULL
+"public","ir_ui_view","create_uid","integer",NULL
+"public","ir_ui_view","write_uid","integer",NULL
+"public","ir_ui_view","name","character varying",NULL
+"public","ir_ui_view","model","character varying",NULL
+"public","ir_ui_view","key","character varying",NULL
+"public","ir_ui_view","type","character varying",NULL
+"public","ir_ui_view","arch_fs","character varying",NULL
+"public","ir_ui_view","mode","character varying",NULL
+"public","ir_ui_view","arch_db","jsonb",NULL
+"public","ir_ui_view","arch_prev","text",NULL
+"public","ir_ui_view","arch_updated","boolean",NULL
+"public","ir_ui_view","active","boolean",NULL
+"public","ir_ui_view","create_date","timestamp without time zone",NULL
+"public","ir_ui_view","write_date","timestamp without time zone",NULL
+"public","ir_ui_view","customize_show","boolean",NULL
+"public","ir_ui_view_custom","id","integer",NULL
+"public","ir_ui_view_custom","ref_id","integer",NULL
+"public","ir_ui_view_custom","user_id","integer",NULL
+"public","ir_ui_view_custom","create_uid","integer",NULL
+"public","ir_ui_view_custom","write_uid","integer",NULL
+"public","ir_ui_view_custom","arch","text",NULL
+"public","ir_ui_view_custom","create_date","timestamp without time zone",NULL
+"public","ir_ui_view_custom","write_date","timestamp without time zone",NULL
+"public","ir_ui_view_group_rel","view_id","integer",NULL
+"public","ir_ui_view_group_rel","group_id","integer",NULL
+"public","mail_activity","id","integer",NULL
+"public","mail_activity","res_model_id","integer",NULL
+"public","mail_activity","res_id","integer",NULL
+"public","mail_activity","activity_type_id","integer",NULL
+"public","mail_activity","user_id","integer",NULL
+"public","mail_activity","recommended_activity_type_id","integer",NULL
+"public","mail_activity","previous_activity_type_id","integer",NULL
+"public","mail_activity","create_uid","integer",NULL
+"public","mail_activity","write_uid","integer",NULL
+"public","mail_activity","res_model","character varying",NULL
+"public","mail_activity","res_name","character varying",NULL
+"public","mail_activity","summary","character varying",NULL
+"public","mail_activity","user_tz","character varying",NULL
+"public","mail_activity","date_deadline","date",NULL
+"public","mail_activity","date_done","date",NULL
+"public","mail_activity","note","text",NULL
+"public","mail_activity","feedback","text",NULL
+"public","mail_activity","automated","boolean",NULL
+"public","mail_activity","active","boolean",NULL
+"public","mail_activity","create_date","timestamp without time zone",NULL
+"public","mail_activity","write_date","timestamp without time zone",NULL
+"public","mail_activity_plan","id","integer",NULL
+"public","mail_activity_plan","company_id","integer",NULL
+"public","mail_activity_plan","res_model_id","integer",NULL
+"public","mail_activity_plan","create_uid","integer",NULL
+"public","mail_activity_plan","write_uid","integer",NULL
+"public","mail_activity_plan","name","character varying",NULL
+"public","mail_activity_plan","res_model","character varying",NULL
+"public","mail_activity_plan","active","boolean",NULL
+"public","mail_activity_plan","create_date","timestamp without time zone",NULL
+"public","mail_activity_plan","write_date","timestamp without time zone",NULL
+"public","mail_activity_plan_mail_activity_schedule_rel","mail_activity_schedule_id","integer",NULL
+"public","mail_activity_plan_mail_activity_schedule_rel","mail_activity_plan_id","integer",NULL
+"public","mail_activity_plan_template","id","integer",NULL
+"public","mail_activity_plan_template","plan_id","integer",NULL
+"public","mail_activity_plan_template","sequence","integer",NULL
+"public","mail_activity_plan_template","activity_type_id","integer",NULL
+"public","mail_activity_plan_template","delay_count","integer",NULL
+"public","mail_activity_plan_template","responsible_id","integer",NULL
+"public","mail_activity_plan_template","create_uid","integer",NULL
+"public","mail_activity_plan_template","write_uid","integer",NULL
+"public","mail_activity_plan_template","delay_unit","character varying",NULL
+"public","mail_activity_plan_template","delay_from","character varying",NULL
+"public","mail_activity_plan_template","summary","character varying",NULL
+"public","mail_activity_plan_template","responsible_type","character varying",NULL
+"public","mail_activity_plan_template","note","text",NULL
+"public","mail_activity_plan_template","create_date","timestamp without time zone",NULL
+"public","mail_activity_plan_template","write_date","timestamp without time zone",NULL
+"public","mail_activity_plan_template_mail_activity_type_rel","mail_activity_plan_template_id","integer",NULL
+"public","mail_activity_plan_template_mail_activity_type_rel","mail_activity_type_id","integer",NULL
+"public","mail_activity_rel","activity_id","integer",NULL
+"public","mail_activity_rel","recommended_id","integer",NULL
+"public","mail_activity_schedule","id","integer",NULL
+"public","mail_activity_schedule","res_model_id","integer",NULL
+"public","mail_activity_schedule","plan_id","integer",NULL
+"public","mail_activity_schedule","plan_on_demand_user_id","integer",NULL
+"public","mail_activity_schedule","activity_type_id","integer",NULL
+"public","mail_activity_schedule","activity_user_id","integer",NULL
+"public","mail_activity_schedule","create_uid","integer",NULL
+"public","mail_activity_schedule","write_uid","integer",NULL
+"public","mail_activity_schedule","res_model","character varying",NULL
+"public","mail_activity_schedule","summary","character varying",NULL
+"public","mail_activity_schedule","plan_date","date",NULL
+"public","mail_activity_schedule","date_deadline","date",NULL
+"public","mail_activity_schedule","res_ids","text",NULL
+"public","mail_activity_schedule","note","text",NULL
+"public","mail_activity_schedule","create_date","timestamp without time zone",NULL
+"public","mail_activity_schedule","write_date","timestamp without time zone",NULL
+"public","mail_activity_schedule_line","id","integer",NULL
+"public","mail_activity_schedule_line","activity_schedule_id","integer",NULL
+"public","mail_activity_schedule_line","responsible_user_id","integer",NULL
+"public","mail_activity_schedule_line","create_uid","integer",NULL
+"public","mail_activity_schedule_line","write_uid","integer",NULL
+"public","mail_activity_schedule_line","line_description","character varying",NULL
+"public","mail_activity_schedule_line","line_date_deadline","date",NULL
+"public","mail_activity_schedule_line","create_date","timestamp without time zone",NULL
+"public","mail_activity_schedule_line","write_date","timestamp without time zone",NULL
+"public","mail_activity_type","id","integer",NULL
+"public","mail_activity_type","sequence","integer",NULL
+"public","mail_activity_type","create_uid","integer",NULL
+"public","mail_activity_type","delay_count","integer",NULL
+"public","mail_activity_type","triggered_next_type_id","integer",NULL
+"public","mail_activity_type","default_user_id","integer",NULL
+"public","mail_activity_type","write_uid","integer",NULL
+"public","mail_activity_type","delay_unit","character varying",NULL
+"public","mail_activity_type","delay_from","character varying",NULL
+"public","mail_activity_type","icon","character varying",NULL
+"public","mail_activity_type","decoration_type","character varying",NULL
+"public","mail_activity_type","res_model","character varying",NULL
+"public","mail_activity_type","chaining_type","character varying",NULL
+"public","mail_activity_type","category","character varying",NULL
+"public","mail_activity_type","name","jsonb",NULL
+"public","mail_activity_type","summary","jsonb",NULL
+"public","mail_activity_type","default_note","jsonb",NULL
+"public","mail_activity_type","active","boolean",NULL
+"public","mail_activity_type","create_date","timestamp without time zone",NULL
+"public","mail_activity_type","write_date","timestamp without time zone",NULL
+"public","mail_activity_type_mail_template_rel","mail_activity_type_id","integer",NULL
+"public","mail_activity_type_mail_template_rel","mail_template_id","integer",NULL
+"public","mail_alias","id","integer",NULL
+"public","mail_alias","alias_domain_id","integer",NULL
+"public","mail_alias","alias_model_id","integer",NULL
+"public","mail_alias","alias_force_thread_id","integer",NULL
+"public","mail_alias","alias_parent_model_id","integer",NULL
+"public","mail_alias","alias_parent_thread_id","integer",NULL
+"public","mail_alias","create_uid","integer",NULL
+"public","mail_alias","write_uid","integer",NULL
+"public","mail_alias","alias_name","character varying",NULL
+"public","mail_alias","alias_full_name","character varying",NULL
+"public","mail_alias","alias_contact","character varying",NULL
+"public","mail_alias","alias_status","character varying",NULL
+"public","mail_alias","alias_bounced_content","jsonb",NULL
+"public","mail_alias","alias_defaults","text",NULL
+"public","mail_alias","alias_incoming_local","boolean",NULL
+"public","mail_alias","create_date","timestamp without time zone",NULL
+"public","mail_alias","write_date","timestamp without time zone",NULL
+"public","mail_alias_domain","id","integer",NULL
+"public","mail_alias_domain","sequence","integer",NULL
+"public","mail_alias_domain","create_uid","integer",NULL
+"public","mail_alias_domain","write_uid","integer",NULL
+"public","mail_alias_domain","name","character varying",NULL
+"public","mail_alias_domain","bounce_alias","character varying",NULL
+"public","mail_alias_domain","catchall_alias","character varying",NULL
+"public","mail_alias_domain","default_from","character varying",NULL
+"public","mail_alias_domain","create_date","timestamp without time zone",NULL
+"public","mail_alias_domain","write_date","timestamp without time zone",NULL
+"public","mail_blacklist","id","integer",NULL
+"public","mail_blacklist","create_uid","integer",NULL
+"public","mail_blacklist","write_uid","integer",NULL
+"public","mail_blacklist","email","character varying",NULL
+"public","mail_blacklist","active","boolean",NULL
+"public","mail_blacklist","create_date","timestamp without time zone",NULL
+"public","mail_blacklist","write_date","timestamp without time zone",NULL
+"public","mail_blacklist_remove","id","integer",NULL
+"public","mail_blacklist_remove","create_uid","integer",NULL
+"public","mail_blacklist_remove","write_uid","integer",NULL
+"public","mail_blacklist_remove","email","character varying",NULL
+"public","mail_blacklist_remove","reason","character varying",NULL
+"public","mail_blacklist_remove","create_date","timestamp without time zone",NULL
+"public","mail_blacklist_remove","write_date","timestamp without time zone",NULL
+"public","mail_canned_response","id","integer",NULL
+"public","mail_canned_response","create_uid","integer",NULL
+"public","mail_canned_response","write_uid","integer",NULL
+"public","mail_canned_response","source","character varying",NULL
+"public","mail_canned_response","substitution","text",NULL
+"public","mail_canned_response","is_shared","boolean",NULL
+"public","mail_canned_response","last_used","timestamp without time zone",NULL
+"public","mail_canned_response","create_date","timestamp without time zone",NULL
+"public","mail_canned_response","write_date","timestamp without time zone",NULL
+"public","mail_canned_response_res_groups_rel","mail_canned_response_id","integer",NULL
+"public","mail_canned_response_res_groups_rel","res_groups_id","integer",NULL
+"public","mail_compose_message","id","integer",NULL
+"public","mail_compose_message","template_id","integer",NULL
+"public","mail_compose_message","parent_id","integer",NULL
+"public","mail_compose_message","author_id","integer",NULL
+"public","mail_compose_message","res_domain_user_id","integer",NULL
+"public","mail_compose_message","record_alias_domain_id","integer",NULL
+"public","mail_compose_message","record_company_id","integer",NULL
+"public","mail_compose_message","subtype_id","integer",NULL
+"public","mail_compose_message","mail_activity_type_id","integer",NULL
+"public","mail_compose_message","mail_server_id","integer",NULL
+"public","mail_compose_message","create_uid","integer",NULL
+"public","mail_compose_message","write_uid","integer",NULL
+"public","mail_compose_message","lang","character varying",NULL
+"public","mail_compose_message","subject","character varying",NULL
+"public","mail_compose_message","email_layout_xmlid","character varying",NULL
+"public","mail_compose_message","email_from","character varying",NULL
+"public","mail_compose_message","composition_mode","character varying",NULL
+"public","mail_compose_message","composition_comment_option","character varying",NULL
+"public","mail_compose_message","model","character varying",NULL
+"public","mail_compose_message","message_type","character varying",NULL
+"public","mail_compose_message","reply_to","character varying",NULL
+"public","mail_compose_message","scheduled_date","character varying",NULL
+"public","mail_compose_message","template_name","character varying",NULL
+"public","mail_compose_message","body","text",NULL
+"public","mail_compose_message","res_ids","text",NULL
+"public","mail_compose_message","res_domain","text",NULL
+"public","mail_compose_message","email_add_signature","boolean",NULL
+"public","mail_compose_message","reply_to_force_new","boolean",NULL
+"public","mail_compose_message","auto_delete","boolean",NULL
+"public","mail_compose_message","auto_delete_keep_log","boolean",NULL
+"public","mail_compose_message","force_send","boolean",NULL
+"public","mail_compose_message","notify_author","boolean",NULL
+"public","mail_compose_message","notify_author_mention","boolean",NULL
+"public","mail_compose_message","notify_skip_followers","boolean",NULL
+"public","mail_compose_message","use_exclusion_list","boolean",NULL
+"public","mail_compose_message","create_date","timestamp without time zone",NULL
+"public","mail_compose_message","write_date","timestamp without time zone",NULL
+"public","mail_compose_message_ir_attachments_rel","wizard_id","integer",NULL
+"public","mail_compose_message_ir_attachments_rel","attachment_id","integer",NULL
+"public","mail_compose_message_res_partner_rel","wizard_id","integer",NULL
+"public","mail_compose_message_res_partner_rel","partner_id","integer",NULL
+"public","mail_followers","id","integer",NULL
+"public","mail_followers","res_id","integer",NULL
+"public","mail_followers","partner_id","integer",NULL
+"public","mail_followers","res_model","character varying",NULL
+"public","mail_followers_edit","id","integer",NULL
+"public","mail_followers_edit","create_uid","integer",NULL
+"public","mail_followers_edit","write_uid","integer",NULL
+"public","mail_followers_edit","res_model","character varying",NULL
+"public","mail_followers_edit","res_ids","character varying",NULL
+"public","mail_followers_edit","operation","character varying",NULL
+"public","mail_followers_edit","message","text",NULL
+"public","mail_followers_edit","notify","boolean",NULL
+"public","mail_followers_edit","create_date","timestamp without time zone",NULL
+"public","mail_followers_edit","write_date","timestamp without time zone",NULL
+"public","mail_followers_edit_res_partner_rel","mail_followers_edit_id","integer",NULL
+"public","mail_followers_edit_res_partner_rel","res_partner_id","integer",NULL
+"public","mail_followers_mail_message_subtype_rel","mail_followers_id","integer",NULL
+"public","mail_followers_mail_message_subtype_rel","mail_message_subtype_id","integer",NULL
+"public","mail_gateway_allowed","id","integer",NULL
+"public","mail_gateway_allowed","create_uid","integer",NULL
+"public","mail_gateway_allowed","write_uid","integer",NULL
+"public","mail_gateway_allowed","email","character varying",NULL
+"public","mail_gateway_allowed","email_normalized","character varying",NULL
+"public","mail_gateway_allowed","create_date","timestamp without time zone",NULL
+"public","mail_gateway_allowed","write_date","timestamp without time zone",NULL
+"public","mail_guest","id","integer",NULL
+"public","mail_guest","country_id","integer",NULL
+"public","mail_guest","create_uid","integer",NULL
+"public","mail_guest","write_uid","integer",NULL
+"public","mail_guest","name","character varying",NULL
+"public","mail_guest","access_token","character varying",NULL
+"public","mail_guest","email","character varying",NULL
+"public","mail_guest","lang","character varying",NULL
+"public","mail_guest","timezone","character varying",NULL
+"public","mail_guest","create_date","timestamp without time zone",NULL
+"public","mail_guest","write_date","timestamp without time zone",NULL
+"public","mail_ice_server","id","integer",NULL
+"public","mail_ice_server","create_uid","integer",NULL
+"public","mail_ice_server","write_uid","integer",NULL
+"public","mail_ice_server","server_type","character varying",NULL
+"public","mail_ice_server","uri","character varying",NULL
+"public","mail_ice_server","username","character varying",NULL
+"public","mail_ice_server","credential","character varying",NULL
+"public","mail_ice_server","create_date","timestamp without time zone",NULL
+"public","mail_ice_server","write_date","timestamp without time zone",NULL
+"public","mail_link_preview","id","integer",NULL
+"public","mail_link_preview","create_uid","integer",NULL
+"public","mail_link_preview","write_uid","integer",NULL
+"public","mail_link_preview","source_url","character varying",NULL
+"public","mail_link_preview","og_type","character varying",NULL
+"public","mail_link_preview","og_title","character varying",NULL
+"public","mail_link_preview","og_site_name","character varying",NULL
+"public","mail_link_preview","og_image","character varying",NULL
+"public","mail_link_preview","og_mimetype","character varying",NULL
+"public","mail_link_preview","image_mimetype","character varying",NULL
+"public","mail_link_preview","og_description","text",NULL
+"public","mail_link_preview","create_date","timestamp without time zone",NULL
+"public","mail_link_preview","write_date","timestamp without time zone",NULL
+"public","mail_mail","id","integer",NULL
+"public","mail_mail","mail_message_id","integer",NULL
+"public","mail_mail","fetchmail_server_id","integer",NULL
+"public","mail_mail","create_uid","integer",NULL
+"public","mail_mail","write_uid","integer",NULL
+"public","mail_mail","email_cc","character varying",NULL
+"public","mail_mail","state","character varying",NULL
+"public","mail_mail","failure_type","character varying",NULL
+"public","mail_mail","body_html","text",NULL
+"public","mail_mail","references","text",NULL
+"public","mail_mail","headers","text",NULL
+"public","mail_mail","email_to","text",NULL
+"public","mail_mail","failure_reason","text",NULL
+"public","mail_mail","is_notification","boolean",NULL
+"public","mail_mail","auto_delete","boolean",NULL
+"public","mail_mail","scheduled_date","timestamp without time zone",NULL
+"public","mail_mail","create_date","timestamp without time zone",NULL
+"public","mail_mail","write_date","timestamp without time zone",NULL
+"public","mail_mail_res_partner_rel","mail_mail_id","integer",NULL
+"public","mail_mail_res_partner_rel","res_partner_id","integer",NULL
+"public","mail_message","id","integer",NULL
+"public","mail_message","parent_id","integer",NULL
+"public","mail_message","res_id","integer",NULL
+"public","mail_message","record_alias_domain_id","integer",NULL
+"public","mail_message","record_company_id","integer",NULL
+"public","mail_message","subtype_id","integer",NULL
+"public","mail_message","mail_activity_type_id","integer",NULL
+"public","mail_message","author_id","integer",NULL
+"public","mail_message","author_guest_id","integer",NULL
+"public","mail_message","mail_server_id","integer",NULL
+"public","mail_message","create_uid","integer",NULL
+"public","mail_message","write_uid","integer",NULL
+"public","mail_message","subject","character varying",NULL
+"public","mail_message","model","character varying",NULL
+"public","mail_message","message_type","character varying",NULL
+"public","mail_message","email_from","character varying",NULL
+"public","mail_message","incoming_email_cc","character varying",NULL
+"public","mail_message","outgoing_email_to","character varying",NULL
+"public","mail_message","message_id","character varying",NULL
+"public","mail_message","reply_to","character varying",NULL
+"public","mail_message","email_layout_xmlid","character varying",NULL
+"public","mail_message","body","text",NULL
+"public","mail_message","incoming_email_to","text",NULL
+"public","mail_message","is_internal","boolean",NULL
+"public","mail_message","reply_to_force_new","boolean",NULL
+"public","mail_message","email_add_signature","boolean",NULL
+"public","mail_message","date","timestamp without time zone",NULL
+"public","mail_message","pinned_at","timestamp without time zone",NULL
+"public","mail_message","create_date","timestamp without time zone",NULL
+"public","mail_message","write_date","timestamp without time zone",NULL
+"public","mail_message_link_preview","id","integer",NULL
+"public","mail_message_link_preview","message_id","integer",NULL
+"public","mail_message_link_preview","link_preview_id","integer",NULL
+"public","mail_message_link_preview","sequence","integer",NULL
+"public","mail_message_link_preview","create_uid","integer",NULL
+"public","mail_message_link_preview","write_uid","integer",NULL
+"public","mail_message_link_preview","is_hidden","boolean",NULL
+"public","mail_message_link_preview","create_date","timestamp without time zone",NULL
+"public","mail_message_link_preview","write_date","timestamp without time zone",NULL
+"public","mail_message_reaction","id","integer",NULL
+"public","mail_message_reaction","message_id","integer",NULL
+"public","mail_message_reaction","partner_id","integer",NULL
+"public","mail_message_reaction","guest_id","integer",NULL
+"public","mail_message_reaction","content","character varying",NULL
+"public","mail_message_res_partner_rel","mail_message_id","integer",NULL
+"public","mail_message_res_partner_rel","res_partner_id","integer",NULL
+"public","mail_message_res_partner_starred_rel","mail_message_id","integer",NULL
+"public","mail_message_res_partner_starred_rel","res_partner_id","integer",NULL
+"public","mail_message_schedule","id","integer",NULL
+"public","mail_message_schedule","mail_message_id","integer",NULL
+"public","mail_message_schedule","create_uid","integer",NULL
+"public","mail_message_schedule","write_uid","integer",NULL
+"public","mail_message_schedule","notification_parameters","text",NULL
+"public","mail_message_schedule","scheduled_datetime","timestamp without time zone",NULL
+"public","mail_message_schedule","create_date","timestamp without time zone",NULL
+"public","mail_message_schedule","write_date","timestamp without time zone",NULL
+"public","mail_message_subtype","id","integer",NULL
+"public","mail_message_subtype","parent_id","integer",NULL
+"public","mail_message_subtype","sequence","integer",NULL
+"public","mail_message_subtype","create_uid","integer",NULL
+"public","mail_message_subtype","write_uid","integer",NULL
+"public","mail_message_subtype","relation_field","character varying",NULL
+"public","mail_message_subtype","res_model","character varying",NULL
+"public","mail_message_subtype","name","jsonb",NULL
+"public","mail_message_subtype","description","jsonb",NULL
+"public","mail_message_subtype","internal","boolean",NULL
+"public","mail_message_subtype","default","boolean",NULL
+"public","mail_message_subtype","hidden","boolean",NULL
+"public","mail_message_subtype","track_recipients","boolean",NULL
+"public","mail_message_subtype","create_date","timestamp without time zone",NULL
+"public","mail_message_subtype","write_date","timestamp without time zone",NULL
+"public","mail_message_translation","id","integer",NULL
+"public","mail_message_translation","message_id","integer",NULL
+"public","mail_message_translation","create_uid","integer",NULL
+"public","mail_message_translation","write_uid","integer",NULL
+"public","mail_message_translation","source_lang","character varying",NULL
+"public","mail_message_translation","target_lang","character varying",NULL
+"public","mail_message_translation","body","text",NULL
+"public","mail_message_translation","create_date","timestamp without time zone",NULL
+"public","mail_message_translation","write_date","timestamp without time zone",NULL
+"public","mail_notification","id","integer",NULL
+"public","mail_notification","author_id","integer",NULL
+"public","mail_notification","mail_message_id","integer",NULL
+"public","mail_notification","mail_mail_id","integer",NULL
+"public","mail_notification","res_partner_id","integer",NULL
+"public","mail_notification","mail_email_address","character varying",NULL
+"public","mail_notification","notification_type","character varying",NULL
+"public","mail_notification","notification_status","character varying",NULL
+"public","mail_notification","failure_type","character varying",NULL
+"public","mail_notification","failure_reason","text",NULL
+"public","mail_notification","is_read","boolean",NULL
+"public","mail_notification","read_date","timestamp without time zone",NULL
+"public","mail_notification","sms_id_int","integer",NULL
+"public","mail_notification","sms_number","character varying",NULL
+"public","mail_notification","letter_id","integer",NULL
+"public","mail_presence","id","integer",NULL
+"public","mail_presence","user_id","integer",NULL
+"public","mail_presence","guest_id","integer",NULL
+"public","mail_presence","status","character varying",NULL
+"public","mail_presence","last_poll","timestamp without time zone",NULL
+"public","mail_presence","last_presence","timestamp without time zone",NULL
+"public","mail_push","id","integer",NULL
+"public","mail_push","mail_push_device_id","integer",NULL
+"public","mail_push","create_uid","integer",NULL
+"public","mail_push","write_uid","integer",NULL
+"public","mail_push","payload","text",NULL
+"public","mail_push","create_date","timestamp without time zone",NULL
+"public","mail_push","write_date","timestamp without time zone",NULL
+"public","mail_push_device","id","integer",NULL
+"public","mail_push_device","partner_id","integer",NULL
+"public","mail_push_device","create_uid","integer",NULL
+"public","mail_push_device","write_uid","integer",NULL
+"public","mail_push_device","endpoint","character varying",NULL
+"public","mail_push_device","keys","character varying",NULL
+"public","mail_push_device","expiration_time","timestamp without time zone",NULL
+"public","mail_push_device","create_date","timestamp without time zone",NULL
+"public","mail_push_device","write_date","timestamp without time zone",NULL
+"public","mail_scheduled_message","id","integer",NULL
+"public","mail_scheduled_message","res_id","integer",NULL
+"public","mail_scheduled_message","author_id","integer",NULL
+"public","mail_scheduled_message","create_uid","integer",NULL
+"public","mail_scheduled_message","write_uid","integer",NULL
+"public","mail_scheduled_message","subject","character varying",NULL
+"public","mail_scheduled_message","composition_comment_option","character varying",NULL
+"public","mail_scheduled_message","model","character varying",NULL
+"public","mail_scheduled_message","send_context","jsonb",NULL
+"public","mail_scheduled_message","body","text",NULL
+"public","mail_scheduled_message","notification_parameters","text",NULL
+"public","mail_scheduled_message","is_note","boolean",NULL
+"public","mail_scheduled_message","scheduled_date","timestamp without time zone",NULL
+"public","mail_scheduled_message","create_date","timestamp without time zone",NULL
+"public","mail_scheduled_message","write_date","timestamp without time zone",NULL
+"public","mail_scheduled_message_res_partner_rel","mail_scheduled_message_id","integer",NULL
+"public","mail_scheduled_message_res_partner_rel","res_partner_id","integer",NULL
+"public","mail_template","id","integer",NULL
+"public","mail_template","model_id","integer",NULL
+"public","mail_template","user_id","integer",NULL
+"public","mail_template","mail_server_id","integer",NULL
+"public","mail_template","ref_ir_act_window","integer",NULL
+"public","mail_template","create_uid","integer",NULL
+"public","mail_template","write_uid","integer",NULL
+"public","mail_template","template_fs","character varying",NULL
+"public","mail_template","lang","character varying",NULL
+"public","mail_template","model","character varying",NULL
+"public","mail_template","email_from","character varying",NULL
+"public","mail_template","email_to","character varying",NULL
+"public","mail_template","partner_to","character varying",NULL
+"public","mail_template","email_cc","character varying",NULL
+"public","mail_template","reply_to","character varying",NULL
+"public","mail_template","email_layout_xmlid","character varying",NULL
+"public","mail_template","scheduled_date","character varying",NULL
+"public","mail_template","name","jsonb",NULL
+"public","mail_template","description","jsonb",NULL
+"public","mail_template","subject","jsonb",NULL
+"public","mail_template","body_html","jsonb",NULL
+"public","mail_template","active","boolean",NULL
+"public","mail_template","use_default_to","boolean",NULL
+"public","mail_template","auto_delete","boolean",NULL
+"public","mail_template","create_date","timestamp without time zone",NULL
+"public","mail_template","write_date","timestamp without time zone",NULL
+"public","mail_template_ir_actions_report_rel","mail_template_id","integer",NULL
+"public","mail_template_ir_actions_report_rel","ir_actions_report_id","integer",NULL
+"public","mail_template_mail_template_reset_rel","mail_template_reset_id","integer",NULL
+"public","mail_template_mail_template_reset_rel","mail_template_id","integer",NULL
+"public","mail_template_preview","id","integer",NULL
+"public","mail_template_preview","mail_template_id","integer",NULL
+"public","mail_template_preview","create_uid","integer",NULL
+"public","mail_template_preview","write_uid","integer",NULL
+"public","mail_template_preview","resource_ref","character varying",NULL
+"public","mail_template_preview","lang","character varying",NULL
+"public","mail_template_preview","create_date","timestamp without time zone",NULL
+"public","mail_template_preview","write_date","timestamp without time zone",NULL
+"public","mail_template_reset","id","integer",NULL
+"public","mail_template_reset","create_uid","integer",NULL
+"public","mail_template_reset","write_uid","integer",NULL
+"public","mail_template_reset","create_date","timestamp without time zone",NULL
+"public","mail_template_reset","write_date","timestamp without time zone",NULL
+"public","mail_tracking_value","id","integer",NULL
+"public","mail_tracking_value","field_id","integer",NULL
+"public","mail_tracking_value","old_value_integer","integer",NULL
+"public","mail_tracking_value","new_value_integer","integer",NULL
+"public","mail_tracking_value","currency_id","integer",NULL
+"public","mail_tracking_value","mail_message_id","integer",NULL
+"public","mail_tracking_value","create_uid","integer",NULL
+"public","mail_tracking_value","write_uid","integer",NULL
+"public","mail_tracking_value","old_value_char","character varying",NULL
+"public","mail_tracking_value","new_value_char","character varying",NULL
+"public","mail_tracking_value","field_info","jsonb",NULL
+"public","mail_tracking_value","old_value_text","text",NULL
+"public","mail_tracking_value","new_value_text","text",NULL
+"public","mail_tracking_value","old_value_datetime","timestamp without time zone",NULL
+"public","mail_tracking_value","new_value_datetime","timestamp without time zone",NULL
+"public","mail_tracking_value","create_date","timestamp without time zone",NULL
+"public","mail_tracking_value","write_date","timestamp without time zone",NULL
+"public","mail_tracking_value","old_value_float","double precision",NULL
+"public","mail_tracking_value","new_value_float","double precision",NULL
+"public","message_attachment_rel","message_id","integer",NULL
+"public","message_attachment_rel","attachment_id","integer",NULL
+"public","module_country","module_id","integer",NULL
+"public","module_country","country_id","integer",NULL
+"public","orm_signaling_assets","id","integer",NULL
+"public","orm_signaling_assets","date","timestamp without time zone",NULL
+"public","orm_signaling_default","id","integer",NULL
+"public","orm_signaling_default","date","timestamp without time zone",NULL
+"public","orm_signaling_groups","id","integer",NULL
+"public","orm_signaling_groups","date","timestamp without time zone",NULL
+"public","orm_signaling_registry","id","integer",NULL
+"public","orm_signaling_registry","date","timestamp without time zone",NULL
+"public","orm_signaling_routing","id","integer",NULL
+"public","orm_signaling_routing","date","timestamp without time zone",NULL
+"public","orm_signaling_stable","id","integer",NULL
+"public","orm_signaling_stable","date","timestamp without time zone",NULL
+"public","orm_signaling_templates","id","integer",NULL
+"public","orm_signaling_templates","date","timestamp without time zone",NULL
+"public","phone_blacklist","id","integer",NULL
+"public","phone_blacklist","create_uid","integer",NULL
+"public","phone_blacklist","write_uid","integer",NULL
+"public","phone_blacklist","number","character varying",NULL
+"public","phone_blacklist","active","boolean",NULL
+"public","phone_blacklist","create_date","timestamp without time zone",NULL
+"public","phone_blacklist","write_date","timestamp without time zone",NULL
+"public","phone_blacklist_remove","id","integer",NULL
+"public","phone_blacklist_remove","create_uid","integer",NULL
+"public","phone_blacklist_remove","write_uid","integer",NULL
+"public","phone_blacklist_remove","phone","character varying",NULL
+"public","phone_blacklist_remove","reason","character varying",NULL
+"public","phone_blacklist_remove","create_date","timestamp without time zone",NULL
+"public","phone_blacklist_remove","write_date","timestamp without time zone",NULL
+"public","portal_share","id","integer",NULL
+"public","portal_share","res_id","integer",NULL
+"public","portal_share","create_uid","integer",NULL
+"public","portal_share","write_uid","integer",NULL
+"public","portal_share","res_model","character varying",NULL
+"public","portal_share","note","text",NULL
+"public","portal_share","create_date","timestamp without time zone",NULL
+"public","portal_share","write_date","timestamp without time zone",NULL
+"public","portal_share_res_partner_rel","portal_share_id","integer",NULL
+"public","portal_share_res_partner_rel","res_partner_id","integer",NULL
+"public","portal_wizard","id","integer",NULL
+"public","portal_wizard","create_uid","integer",NULL
+"public","portal_wizard","write_uid","integer",NULL
+"public","portal_wizard","welcome_message","text",NULL
+"public","portal_wizard","create_date","timestamp without time zone",NULL
+"public","portal_wizard","write_date","timestamp without time zone",NULL
+"public","portal_wizard_res_partner_rel","portal_wizard_id","integer",NULL
+"public","portal_wizard_res_partner_rel","res_partner_id","integer",NULL
+"public","portal_wizard_user","id","integer",NULL
+"public","portal_wizard_user","wizard_id","integer",NULL
+"public","portal_wizard_user","partner_id","integer",NULL
+"public","portal_wizard_user","create_uid","integer",NULL
+"public","portal_wizard_user","write_uid","integer",NULL
+"public","portal_wizard_user","email","character varying",NULL
+"public","portal_wizard_user","create_date","timestamp without time zone",NULL
+"public","portal_wizard_user","write_date","timestamp without time zone",NULL
+"public","privacy_log","id","integer",NULL
+"public","privacy_log","user_id","integer",NULL
+"public","privacy_log","create_uid","integer",NULL
+"public","privacy_log","write_uid","integer",NULL
+"public","privacy_log","anonymized_name","character varying",NULL
+"public","privacy_log","anonymized_email","character varying",NULL
+"public","privacy_log","execution_details","text",NULL
+"public","privacy_log","records_description","text",NULL
+"public","privacy_log","additional_note","text",NULL
+"public","privacy_log","date","timestamp without time zone",NULL
+"public","privacy_log","create_date","timestamp without time zone",NULL
+"public","privacy_log","write_date","timestamp without time zone",NULL
+"public","privacy_lookup_wizard","id","integer",NULL
+"public","privacy_lookup_wizard","log_id","integer",NULL
+"public","privacy_lookup_wizard","create_uid","integer",NULL
+"public","privacy_lookup_wizard","write_uid","integer",NULL
+"public","privacy_lookup_wizard","name","character varying",NULL
+"public","privacy_lookup_wizard","email","character varying",NULL
+"public","privacy_lookup_wizard","execution_details","text",NULL
+"public","privacy_lookup_wizard","create_date","timestamp without time zone",NULL
+"public","privacy_lookup_wizard","write_date","timestamp without time zone",NULL
+"public","privacy_lookup_wizard_line","id","integer",NULL
+"public","privacy_lookup_wizard_line","wizard_id","integer",NULL
+"public","privacy_lookup_wizard_line","res_id","integer",NULL
+"public","privacy_lookup_wizard_line","res_model_id","integer",NULL
+"public","privacy_lookup_wizard_line","create_uid","integer",NULL
+"public","privacy_lookup_wizard_line","write_uid","integer",NULL
+"public","privacy_lookup_wizard_line","res_name","character varying",NULL
+"public","privacy_lookup_wizard_line","res_model","character varying",NULL
+"public","privacy_lookup_wizard_line","execution_details","character varying",NULL
+"public","privacy_lookup_wizard_line","has_active","boolean",NULL
+"public","privacy_lookup_wizard_line","is_active","boolean",NULL
+"public","privacy_lookup_wizard_line","is_unlinked","boolean",NULL
+"public","privacy_lookup_wizard_line","create_date","timestamp without time zone",NULL
+"public","privacy_lookup_wizard_line","write_date","timestamp without time zone",NULL
+"public","project_acq_template_budget_rel","acq_id","integer",NULL
+"public","project_acq_template_budget_rel","budget_id","integer",NULL
+"public","project_acq_template_dependency_rel","acq_id","integer",NULL
+"public","project_acq_template_dependency_rel","dependency_id","integer",NULL
+"public","project_acquisition","id","integer",NULL
+"public","project_acquisition","sequence","integer",NULL
+"public","project_acquisition","project_id","integer",NULL
+"public","project_acquisition","start_activity_id","integer",NULL
+"public","project_acquisition","start_offset_days","integer",NULL
+"public","project_acquisition","end_activity_id","integer",NULL
+"public","project_acquisition","end_offset_days","integer",NULL
+"public","project_acquisition","create_uid","integer",NULL
+"public","project_acquisition","write_uid","integer",NULL
+"public","project_acquisition","name","character varying",NULL
+"public","project_acquisition","code","character varying",NULL
+"public","project_acquisition","start_source_type","character varying",NULL
+"public","project_acquisition","start_project_ref","character varying",NULL
+"public","project_acquisition","end_source_type","character varying",NULL
+"public","project_acquisition","end_project_ref","character varying",NULL
+"public","project_acquisition","description","text",NULL
+"public","project_acquisition","create_date","timestamp without time zone",NULL
+"public","project_acquisition","write_date","timestamp without time zone",NULL
+"public","project_acquisition","phase","character varying",NULL
+"public","project_acquisition","state","character varying",NULL
+"public","project_acquisition","start_activity_ref_type","character varying",NULL
+"public","project_acquisition","end_activity_ref_type","character varying",NULL
+"public","project_acquisition","date_start","date",NULL
+"public","project_acquisition","date_end","date",NULL
+"public","project_acquisition","baza","double precision",NULL
+"public","project_acquisition","tva","double precision",NULL
+"public","project_acquisition","total","double precision",NULL
+"public","project_acquisition_budget_rel","acquisition_id","integer",NULL
+"public","project_acquisition_budget_rel","budget_id","integer",NULL
+"public","project_acquisition_dependency_rel","acquisition_id","integer",NULL
+"public","project_acquisition_dependency_rel","dependency_id","integer",NULL
+"public","project_acquisition_export_wizard","id","integer",NULL
+"public","project_acquisition_export_wizard","project_id","integer",NULL
+"public","project_acquisition_export_wizard","create_uid","integer",NULL
+"public","project_acquisition_export_wizard","write_uid","integer",NULL
+"public","project_acquisition_export_wizard","file_name","character varying",NULL
+"public","project_acquisition_export_wizard","create_date","timestamp without time zone",NULL
+"public","project_acquisition_export_wizard","write_date","timestamp without time zone",NULL
+"public","project_acquisition_template","id","integer",NULL
+"public","project_acquisition_template","sequence","integer",NULL
+"public","project_acquisition_template","create_uid","integer",NULL
+"public","project_acquisition_template","write_uid","integer",NULL
+"public","project_acquisition_template","name","character varying",NULL
+"public","project_acquisition_template","code","character varying",NULL
+"public","project_acquisition_template","phase","character varying",NULL
+"public","project_acquisition_template","start_template_ref_type","character varying",NULL
+"public","project_acquisition_template","end_template_ref_type","character varying",NULL
+"public","project_acquisition_template","description","text",NULL
+"public","project_acquisition_template","create_date","timestamp without time zone",NULL
+"public","project_acquisition_template","write_date","timestamp without time zone",NULL
+"public","project_acquisition_template","start_offset_days","integer",NULL
+"public","project_acquisition_template","end_offset_days","integer",NULL
+"public","project_acquisition_template","start_source_type","character varying",NULL
+"public","project_acquisition_template","start_project_ref","character varying",NULL
+"public","project_acquisition_template","end_source_type","character varying",NULL
+"public","project_acquisition_template","end_project_ref","character varying",NULL
+"public","project_acquisition_template","start_template_id","integer",NULL
+"public","project_acquisition_template","end_template_id","integer",NULL
+"public","project_acquisition_template","baza","double precision",NULL
+"public","project_acquisition_template","tva","double precision",NULL
+"public","project_acquisition_template_dependency_rel","template_id","integer",NULL
+"public","project_acquisition_template_dependency_rel","dependency_id","integer",NULL
+"public","project_acquisition_template_project_budget_rel","project_acquisition_template_id","integer",NULL
+"public","project_acquisition_template_project_budget_rel","project_budget_id","integer",NULL
+"public","project_activity","id","integer",NULL
+"public","project_activity","project_id","integer",NULL
+"public","project_activity","create_uid","integer",NULL
+"public","project_activity","write_uid","integer",NULL
+"public","project_activity","name","character varying",NULL
+"public","project_activity","status","character varying",NULL
+"public","project_activity","data_start","date",NULL
+"public","project_activity","data_end","date",NULL
+"public","project_activity","create_date","timestamp without time zone",NULL
+"public","project_activity","write_date","timestamp without time zone",NULL
+"public","project_activity","sequence","integer",NULL
+"public","project_activity","code","character varying",NULL
+"public","project_activity","phase","character varying",NULL
+"public","project_activity","state","character varying",NULL
+"public","project_activity","date_start","date",NULL
+"public","project_activity","date_end","date",NULL
+"public","project_activity","start_activity_id","integer",NULL
+"public","project_activity","start_offset_days","integer",NULL
+"public","project_activity","end_activity_id","integer",NULL
+"public","project_activity","end_offset_days","integer",NULL
+"public","project_activity","start_source_type","character varying",NULL
+"public","project_activity","start_project_ref","character varying",NULL
+"public","project_activity","start_activity_ref_type","character varying",NULL
+"public","project_activity","end_source_type","character varying",NULL
+"public","project_activity","end_project_ref","character varying",NULL
+"public","project_activity","end_activity_ref_type","character varying",NULL
+"public","project_activity","template_id","integer",NULL
+"public","project_activity_dependency_rel","activity_id","integer",NULL
+"public","project_activity_dependency_rel","dependency_id","integer",NULL
+"public","project_activity_export_wizard","id","integer",NULL
+"public","project_activity_export_wizard","project_id","integer",NULL
+"public","project_activity_export_wizard","create_uid","integer",NULL
+"public","project_activity_export_wizard","write_uid","integer",NULL
+"public","project_activity_export_wizard","file_name","character varying",NULL
+"public","project_activity_export_wizard","create_date","timestamp without time zone",NULL
+"public","project_activity_export_wizard","write_date","timestamp without time zone",NULL
+"public","project_activity_template","id","integer",NULL
+"public","project_activity_template","sequence","integer",NULL
+"public","project_activity_template","create_uid","integer",NULL
+"public","project_activity_template","write_uid","integer",NULL
+"public","project_activity_template","name","character varying",NULL
+"public","project_activity_template","code","character varying",NULL
+"public","project_activity_template","phase","character varying",NULL
+"public","project_activity_template","create_date","timestamp without time zone",NULL
+"public","project_activity_template","write_date","timestamp without time zone",NULL
+"public","project_activity_template","start_template_id","integer",NULL
+"public","project_activity_template","start_offset_days","integer",NULL
+"public","project_activity_template","end_template_id","integer",NULL
+"public","project_activity_template","end_offset_days","integer",NULL
+"public","project_activity_template","start_source_type","character varying",NULL
+"public","project_activity_template","start_project_ref","character varying",NULL
+"public","project_activity_template","end_source_type","character varying",NULL
+"public","project_activity_template","end_project_ref","character varying",NULL
+"public","project_activity_template","start_template_ref_type","character varying",NULL
+"public","project_activity_template","end_template_ref_type","character varying",NULL
+"public","project_activity_template_dependency_rel","activity_id","integer",NULL
+"public","project_activity_template_dependency_rel","dependency_id","integer",NULL
+"public","project_budget","id","integer",NULL
+"public","project_budget","project_id","integer",NULL
+"public","project_budget","create_uid","integer",NULL
+"public","project_budget","write_uid","integer",NULL
+"public","project_budget","name","character varying",NULL
+"public","project_budget","create_date","timestamp without time zone",NULL
+"public","project_budget","write_date","timestamp without time zone",NULL
+"public","project_budget","nr_crt","character varying",NULL
+"public","project_budget","tip_cheltuiala","character varying",NULL
+"public","project_budget","mysmis","character varying",NULL
+"public","project_budget","chelt_elig_baza","double precision",NULL
+"public","project_budget","chelt_elig_tva","numeric",NULL
+"public","project_budget","total_eligibil","double precision",NULL
+"public","project_budget","chelt_neelig_baza","double precision",NULL
+"public","project_budget","chelt_neelig_tva","numeric",NULL
+"public","project_budget","total_neeligibil","double precision",NULL
+"public","project_budget","total_baza","double precision",NULL
+"public","project_budget","total_tva","double precision",NULL
+"public","project_budget","total","double precision",NULL
+"public","project_budget","total_chelt_eligibile_neramb","double precision",NULL
+"public","project_budget","total_chelt_eligibile_aport","double precision",NULL
+"public","project_budget","chapter","character varying",NULL
+"public","project_budget","subchapter","character varying",NULL
+"public","project_budget_singleton","id","integer",NULL
+"public","project_budget_singleton","create_uid","integer",NULL
+"public","project_budget_singleton","write_uid","integer",NULL
+"public","project_budget_singleton","name","character varying",NULL
+"public","project_budget_singleton","code","character varying",NULL
+"public","project_budget_singleton","description","text",NULL
+"public","project_budget_singleton","create_date","timestamp without time zone",NULL
+"public","project_budget_singleton","write_date","timestamp without time zone",NULL
+"public","project_budget_singleton","total_baza","double precision",NULL
+"public","project_budget_singleton","total_tva","double precision",NULL
+"public","project_budget_singleton","total","double precision",NULL
+"public","project_budget_singleton_line","id","integer",NULL
+"public","project_budget_singleton_line","singleton_id","integer",NULL
+"public","project_budget_singleton_line","create_uid","integer",NULL
+"public","project_budget_singleton_line","write_uid","integer",NULL
+"public","project_budget_singleton_line","chapter","character varying",NULL
+"public","project_budget_singleton_line","subchapter","character varying",NULL
+"public","project_budget_singleton_line","name","character varying",NULL
+"public","project_budget_singleton_line","tip_cheltuiala","character varying",NULL
+"public","project_budget_singleton_line","mysmis","character varying",NULL
+"public","project_budget_singleton_line","create_date","timestamp without time zone",NULL
+"public","project_budget_singleton_line","write_date","timestamp without time zone",NULL
+"public","project_budget_singleton_line","chelt_elig_baza","double precision",NULL
+"public","project_budget_singleton_line","chelt_elig_tva","double precision",NULL
+"public","project_budget_singleton_line","total_eligibil","double precision",NULL
+"public","project_budget_singleton_line","chelt_neelig_baza","double precision",NULL
+"public","project_budget_singleton_line","chelt_neelig_tva","double precision",NULL
+"public","project_budget_singleton_line","total_neeligibil","double precision",NULL
+"public","project_budget_singleton_line","total_baza","double precision",NULL
+"public","project_budget_singleton_line","total_tva","double precision",NULL
+"public","project_budget_singleton_line","total","double precision",NULL
+"public","project_budget_singleton_line","total_chelt_eligibile_neramb","double precision",NULL
+"public","project_budget_singleton_line","total_chelt_eligibile_aport","double precision",NULL
+"public","project_budget_template","id","integer",NULL
+"public","project_budget_template","create_uid","integer",NULL
+"public","project_budget_template","write_uid","integer",NULL
+"public","project_budget_template","name","character varying",NULL
+"public","project_budget_template","code","character varying",NULL
+"public","project_budget_template","description","text",NULL
+"public","project_budget_template","create_date","timestamp without time zone",NULL
+"public","project_budget_template","write_date","timestamp without time zone",NULL
+"public","project_budget_template","total_baza","double precision",NULL
+"public","project_budget_template","total_tva","double precision",NULL
+"public","project_budget_template","total","double precision",NULL
+"public","project_budget_template_import_wizard","id","integer",NULL
+"public","project_budget_template_import_wizard","project_id","integer",NULL
+"public","project_budget_template_import_wizard","template_id","integer",NULL
+"public","project_budget_template_import_wizard","create_uid","integer",NULL
+"public","project_budget_template_import_wizard","write_uid","integer",NULL
+"public","project_budget_template_import_wizard","confirm_override","boolean",NULL
+"public","project_budget_template_import_wizard","create_date","timestamp without time zone",NULL
+"public","project_budget_template_import_wizard","write_date","timestamp without time zone",NULL
+"public","project_budget_template_line","id","integer",NULL
+"public","project_budget_template_line","template_id","integer",NULL
+"public","project_budget_template_line","create_uid","integer",NULL
+"public","project_budget_template_line","write_uid","integer",NULL
+"public","project_budget_template_line","chapter","character varying",NULL
+"public","project_budget_template_line","subchapter","character varying",NULL
+"public","project_budget_template_line","name","character varying",NULL
+"public","project_budget_template_line","tip_cheltuiala","character varying",NULL
+"public","project_budget_template_line","mysmis","character varying",NULL
+"public","project_budget_template_line","create_date","timestamp without time zone",NULL
+"public","project_budget_template_line","write_date","timestamp without time zone",NULL
+"public","project_budget_template_line","chelt_elig_baza","double precision",NULL
+"public","project_budget_template_line","chelt_elig_tva","double precision",NULL
+"public","project_budget_template_line","total_eligibil","double precision",NULL
+"public","project_budget_template_line","chelt_neelig_baza","double precision",NULL
+"public","project_budget_template_line","chelt_neelig_tva","double precision",NULL
+"public","project_budget_template_line","total_neeligibil","double precision",NULL
+"public","project_budget_template_line","total_baza","double precision",NULL
+"public","project_budget_template_line","total_tva","double precision",NULL
+"public","project_budget_template_line","total","double precision",NULL
+"public","project_budget_template_line","total_chelt_eligibile_neramb","double precision",NULL
+"public","project_budget_template_line","total_chelt_eligibile_aport","double precision",NULL
+"public","project_contract","id","integer",NULL
+"public","project_contract","implementation_id","integer",NULL
+"public","project_contract","partner_id","integer",NULL
+"public","project_contract","file_id","integer",NULL
+"public","project_contract","create_uid","integer",NULL
+"public","project_contract","write_uid","integer",NULL
+"public","project_contract","name","character varying",NULL
+"public","project_contract","state","character varying",NULL
+"public","project_contract","date_signed","date",NULL
+"public","project_contract","create_date","timestamp without time zone",NULL
+"public","project_contract","write_date","timestamp without time zone",NULL
+"public","project_deviz_export_wizard","id","integer",NULL
+"public","project_deviz_export_wizard","project_id","integer",NULL
+"public","project_deviz_export_wizard","create_uid","integer",NULL
+"public","project_deviz_export_wizard","write_uid","integer",NULL
+"public","project_deviz_export_wizard","file_name","character varying",NULL
+"public","project_deviz_export_wizard","create_date","timestamp without time zone",NULL
+"public","project_deviz_export_wizard","write_date","timestamp without time zone",NULL
+"public","project_deviz_import_wizard","id","integer",NULL
+"public","project_deviz_import_wizard","project_id","integer",NULL
+"public","project_deviz_import_wizard","create_uid","integer",NULL
+"public","project_deviz_import_wizard","write_uid","integer",NULL
+"public","project_deviz_import_wizard","file_name","character varying",NULL
+"public","project_deviz_import_wizard","confirm_override","boolean",NULL
+"public","project_deviz_import_wizard","create_date","timestamp without time zone",NULL
+"public","project_deviz_import_wizard","write_date","timestamp without time zone",NULL
+"public","project_document","id","integer",NULL
+"public","project_document","implementation_id","integer",NULL
+"public","project_document","partner_id","integer",NULL
+"public","project_document","create_uid","integer",NULL
+"public","project_document","write_uid","integer",NULL
+"public","project_document","name","character varying",NULL
+"public","project_document","date","date",NULL
+"public","project_document","create_date","timestamp without time zone",NULL
+"public","project_document","write_date","timestamp without time zone",NULL
+"public","project_document_line","id","integer",NULL
+"public","project_document_line","document_id","integer",NULL
+"public","project_document_line","budget_line_id","integer",NULL
+"public","project_document_line","currency_id","integer",NULL
+"public","project_document_line","create_uid","integer",NULL
+"public","project_document_line","write_uid","integer",NULL
+"public","project_document_line","description","character varying",NULL
+"public","project_document_line","amount","numeric",NULL
+"public","project_document_line","create_date","timestamp without time zone",NULL
+"public","project_document_line","write_date","timestamp without time zone",NULL
+"public","project_funding","id","integer",NULL
+"public","project_funding","create_uid","integer",NULL
+"public","project_funding","write_uid","integer",NULL
+"public","project_funding","beneficiar","character varying",NULL
+"public","project_funding","cui","character varying",NULL
+"public","project_funding","denumire","character varying",NULL
+"public","project_funding","cod","character varying",NULL
+"public","project_funding","tva_eligibila","character varying",NULL
+"public","project_funding","data_depunere","date",NULL
+"public","project_funding","data_semnare","date",NULL
+"public","project_funding","data_finalizare","date",NULL
+"public","project_funding","create_date","timestamp without time zone",NULL
+"public","project_funding","write_date","timestamp without time zone",NULL
+"public","project_funding","curs_eur","double precision",NULL
+"public","project_funding","deviz_note","text",NULL
+"public","project_funding","achizitii_note","text",NULL
+"public","project_funding","activitati_note","text",NULL
+"public","project_funding","rambursare_note","text",NULL
+"public","project_funding","total_deviz_eligibil","double precision",NULL
+"public","project_funding","total_deviz_neeligibil","double precision",NULL
+"public","project_funding","total_deviz_general","double precision",NULL
+"public","project_funding","aport_valoare","double precision",NULL
+"public","project_funding","stadiu_financiar","double precision",NULL
+"public","project_funding","stadiu_fizic","double precision",NULL
+"public","project_funding","status_proiect","character varying",NULL
+"public","project_funding","data_monitorizare","date",NULL
+"public","project_funding","tip_solicitant","character varying",NULL
+"public","project_funding","tip_decizie","character varying",NULL
+"public","project_funding","numar_decizie","character varying",NULL
+"public","project_funding","localitate","character varying",NULL
+"public","project_funding","judet","character varying",NULL
+"public","project_funding","reprezentant","character varying",NULL
+"public","project_funding","telefon","character varying",NULL
+"public","project_funding","email","character varying",NULL
+"public","project_funding","areal","character varying",NULL
+"public","project_funding","regiune","character varying",NULL
+"public","project_funding","actiune","character varying",NULL
+"public","project_funding","cf_implementare","character varying",NULL
+"public","project_funding","cad_implementare","character varying",NULL
+"public","project_funding","utilizare","character varying",NULL
+"public","project_funding","proprietar","character varying",NULL
+"public","project_funding","teren_suprafata","character varying",NULL
+"public","project_funding","data_infiintarii","date",NULL
+"public","project_implementation","id","integer",NULL
+"public","project_implementation","funding_project_id","integer",NULL
+"public","project_implementation","create_uid","integer",NULL
+"public","project_implementation","write_uid","integer",NULL
+"public","project_implementation","start_date","date",NULL
+"public","project_implementation","end_date","date",NULL
+"public","project_implementation","create_date","timestamp without time zone",NULL
+"public","project_implementation","write_date","timestamp without time zone",NULL
+"public","project_implementation","user_id","integer",NULL
+"public","project_implementation","state","character varying",NULL
+"public","project_implementation","description","text",NULL
+"public","project_implementation_create_wizard","id","integer",NULL
+"public","project_implementation_create_wizard","funding_id","integer",NULL
+"public","project_implementation_create_wizard","create_uid","integer",NULL
+"public","project_implementation_create_wizard","write_uid","integer",NULL
+"public","project_implementation_create_wizard","message","text",NULL
+"public","project_implementation_create_wizard","create_date","timestamp without time zone",NULL
+"public","project_implementation_create_wizard","write_date","timestamp without time zone",NULL
+"public","project_monitoring","id","integer",NULL
+"public","project_monitoring","nr","integer",NULL
+"public","project_monitoring","sequence","integer",NULL
+"public","project_monitoring","termen_activity_id","integer",NULL
+"public","project_monitoring","termen_offset_days","integer",NULL
+"public","project_monitoring","project_id","integer",NULL
+"public","project_monitoring","create_uid","integer",NULL
+"public","project_monitoring","write_uid","integer",NULL
+"public","project_monitoring","name","character varying",NULL
+"public","project_monitoring","tip_masurare","character varying",NULL
+"public","project_monitoring","tip_indicator","character varying",NULL
+"public","project_monitoring","termen_source","character varying",NULL
+"public","project_monitoring","termen_project_ref","character varying",NULL
+"public","project_monitoring","um","character varying",NULL
+"public","project_monitoring","termen_realizare","date",NULL
+"public","project_monitoring","descriere","text",NULL
+"public","project_monitoring","criteriu_validare","text",NULL
+"public","project_monitoring","documente","text",NULL
+"public","project_monitoring","valoare_initiala","numeric",NULL
+"public","project_monitoring","valoare_finala","numeric",NULL
+"public","project_monitoring","diferenta","numeric",NULL
+"public","project_monitoring","create_date","timestamp without time zone",NULL
+"public","project_monitoring","write_date","timestamp without time zone",NULL
+"public","project_monitoring","source_template_id","integer",NULL
+"public","project_monitoring_export_wizard","id","integer",NULL
+"public","project_monitoring_export_wizard","project_id","integer",NULL
+"public","project_monitoring_export_wizard","create_uid","integer",NULL
+"public","project_monitoring_export_wizard","write_uid","integer",NULL
+"public","project_monitoring_export_wizard","file_name","character varying",NULL
+"public","project_monitoring_export_wizard","create_date","timestamp without time zone",NULL
+"public","project_monitoring_export_wizard","write_date","timestamp without time zone",NULL
+"public","project_monitoring_template","id","integer",NULL
+"public","project_monitoring_template","sequence","integer",NULL
+"public","project_monitoring_template","termen_template_activity_id","integer",NULL
+"public","project_monitoring_template","termen_offset_days","integer",NULL
+"public","project_monitoring_template","create_uid","integer",NULL
+"public","project_monitoring_template","write_uid","integer",NULL
+"public","project_monitoring_template","name","character varying",NULL
+"public","project_monitoring_template","tip_masurare","character varying",NULL
+"public","project_monitoring_template","tip_indicator","character varying",NULL
+"public","project_monitoring_template","termen_source","character varying",NULL
+"public","project_monitoring_template","termen_project_ref","character varying",NULL
+"public","project_monitoring_template","um","character varying",NULL
+"public","project_monitoring_template","descriere","text",NULL
+"public","project_monitoring_template","criteriu_validare","text",NULL
+"public","project_monitoring_template","documente","text",NULL
+"public","project_monitoring_template","valoare_initiala","numeric",NULL
+"public","project_monitoring_template","valoare_finala","numeric",NULL
+"public","project_monitoring_template","create_date","timestamp without time zone",NULL
+"public","project_monitoring_template","write_date","timestamp without time zone",NULL
+"public","project_monitoring_template","diferenta","numeric",NULL
+"public","project_purchase","id","integer",NULL
+"public","project_purchase","project_id","integer",NULL
+"public","project_purchase","create_uid","integer",NULL
+"public","project_purchase","write_uid","integer",NULL
+"public","project_purchase","name","character varying",NULL
+"public","project_purchase","furnizor","character varying",NULL
+"public","project_purchase","data","date",NULL
+"public","project_purchase","create_date","timestamp without time zone",NULL
+"public","project_purchase","write_date","timestamp without time zone",NULL
+"public","project_purchase","valoare","double precision",NULL
+"public","project_purchase","partner_id","integer",NULL
+"public","project_purchase","currency_id","integer",NULL
+"public","project_purchase","state","character varying",NULL
+"public","project_purchase","date_order","date",NULL
+"public","project_purchase","amount_total","numeric",NULL
+"public","project_reimbursement","id","integer",NULL
+"public","project_reimbursement","project_id","integer",NULL
+"public","project_reimbursement","create_uid","integer",NULL
+"public","project_reimbursement","write_uid","integer",NULL
+"public","project_reimbursement","status","character varying",NULL
+"public","project_reimbursement","data","date",NULL
+"public","project_reimbursement","create_date","timestamp without time zone",NULL
+"public","project_reimbursement","write_date","timestamp without time zone",NULL
+"public","project_reimbursement","suma","double precision",NULL
+"public","project_reimbursement","sequence","integer",NULL
+"public","project_reimbursement","start_activity_id","integer",NULL
+"public","project_reimbursement","start_offset_days","integer",NULL
+"public","project_reimbursement","end_activity_id","integer",NULL
+"public","project_reimbursement","end_offset_days","integer",NULL
+"public","project_reimbursement","name","character varying",NULL
+"public","project_reimbursement","code","character varying",NULL
+"public","project_reimbursement","phase","character varying",NULL
+"public","project_reimbursement","state","character varying",NULL
+"public","project_reimbursement","start_source_type","character varying",NULL
+"public","project_reimbursement","start_project_ref","character varying",NULL
+"public","project_reimbursement","start_activity_ref_type","character varying",NULL
+"public","project_reimbursement","end_source_type","character varying",NULL
+"public","project_reimbursement","end_project_ref","character varying",NULL
+"public","project_reimbursement","end_activity_ref_type","character varying",NULL
+"public","project_reimbursement","date_start","date",NULL
+"public","project_reimbursement","date_end","date",NULL
+"public","project_reimbursement","description","text",NULL
+"public","project_reimbursement","baza_eligibila","double precision",NULL
+"public","project_reimbursement","tva_eligibil","double precision",NULL
+"public","project_reimbursement","total_eligibil","double precision",NULL
+"public","project_reimbursement_budget_rel","reimbursement_id","integer",NULL
+"public","project_reimbursement_budget_rel","budget_id","integer",NULL
+"public","project_reimbursement_dependency_rel","reimbursement_id","integer",NULL
+"public","project_reimbursement_dependency_rel","dependency_id","integer",NULL
+"public","project_reimbursement_export_wizard","id","integer",NULL
+"public","project_reimbursement_export_wizard","project_id","integer",NULL
+"public","project_reimbursement_export_wizard","create_uid","integer",NULL
+"public","project_reimbursement_export_wizard","write_uid","integer",NULL
+"public","project_reimbursement_export_wizard","file_name","character varying",NULL
+"public","project_reimbursement_export_wizard","create_date","timestamp without time zone",NULL
+"public","project_reimbursement_export_wizard","write_date","timestamp without time zone",NULL
+"public","project_reimbursement_template","id","integer",NULL
+"public","project_reimbursement_template","sequence","integer",NULL
+"public","project_reimbursement_template","start_template_id","integer",NULL
+"public","project_reimbursement_template","start_offset_days","integer",NULL
+"public","project_reimbursement_template","end_template_id","integer",NULL
+"public","project_reimbursement_template","end_offset_days","integer",NULL
+"public","project_reimbursement_template","create_uid","integer",NULL
+"public","project_reimbursement_template","write_uid","integer",NULL
+"public","project_reimbursement_template","name","character varying",NULL
+"public","project_reimbursement_template","code","character varying",NULL
+"public","project_reimbursement_template","phase","character varying",NULL
+"public","project_reimbursement_template","start_source_type","character varying",NULL
+"public","project_reimbursement_template","start_project_ref","character varying",NULL
+"public","project_reimbursement_template","start_template_ref_type","character varying",NULL
+"public","project_reimbursement_template","end_source_type","character varying",NULL
+"public","project_reimbursement_template","end_project_ref","character varying",NULL
+"public","project_reimbursement_template","end_template_ref_type","character varying",NULL
+"public","project_reimbursement_template","description","text",NULL
+"public","project_reimbursement_template","create_date","timestamp without time zone",NULL
+"public","project_reimbursement_template","write_date","timestamp without time zone",NULL
+"public","project_reimbursement_template","baza_eligibila","double precision",NULL
+"public","project_reimbursement_template","tva_eligibil","double precision",NULL
+"public","project_reimbursement_template","total_eligibil","double precision",NULL
+"public","project_reimbursement_template_dependency_rel","template_id","integer",NULL
+"public","project_reimbursement_template_dependency_rel","dependency_id","integer",NULL
+"public","project_request","id","integer",NULL
+"public","project_request","implementation_id","integer",NULL
+"public","project_request","document_line_id","integer",NULL
+"public","project_request","currency_id","integer",NULL
+"public","project_request","create_uid","integer",NULL
+"public","project_request","write_uid","integer",NULL
+"public","project_request","name","character varying",NULL
+"public","project_request","state","character varying",NULL
+"public","project_request","description","text",NULL
+"public","project_request","amount","numeric",NULL
+"public","project_request","create_date","timestamp without time zone",NULL
+"public","project_request","write_date","timestamp without time zone",NULL
+"public","project_share_wizard_res_partner_rel","project_share_wizard_id","integer",NULL
+"public","project_share_wizard_res_partner_rel","res_partner_id","integer",NULL
+"public","properties_base_definition","id","integer",NULL
+"public","properties_base_definition","properties_field_id","integer",NULL
+"public","properties_base_definition","create_uid","integer",NULL
+"public","properties_base_definition","write_uid","integer",NULL
+"public","properties_base_definition","properties_definition","jsonb",NULL
+"public","properties_base_definition","create_date","timestamp without time zone",NULL
+"public","properties_base_definition","write_date","timestamp without time zone",NULL
+"public","rating_rating","id","integer",NULL
+"public","rating_rating","res_model_id","integer",NULL
+"public","rating_rating","res_id","integer",NULL
+"public","rating_rating","parent_res_model_id","integer",NULL
+"public","rating_rating","parent_res_id","integer",NULL
+"public","rating_rating","rated_partner_id","integer",NULL
+"public","rating_rating","partner_id","integer",NULL
+"public","rating_rating","message_id","integer",NULL
+"public","rating_rating","create_uid","integer",NULL
+"public","rating_rating","write_uid","integer",NULL
+"public","rating_rating","res_name","character varying",NULL
+"public","rating_rating","res_model","character varying",NULL
+"public","rating_rating","parent_res_name","character varying",NULL
+"public","rating_rating","parent_res_model","character varying",NULL
+"public","rating_rating","rating_text","character varying",NULL
+"public","rating_rating","access_token","character varying",NULL
+"public","rating_rating","feedback","text",NULL
+"public","rating_rating","is_internal","boolean",NULL
+"public","rating_rating","consumed","boolean",NULL
+"public","rating_rating","create_date","timestamp without time zone",NULL
+"public","rating_rating","rated_on","timestamp without time zone",NULL
+"public","rating_rating","write_date","timestamp without time zone",NULL
+"public","rating_rating","rating","double precision",NULL
+"public","rating_rating","publisher_id","integer",NULL
+"public","rating_rating","publisher_comment","text",NULL
+"public","rating_rating","publisher_datetime","timestamp without time zone",NULL
+"public","reimbursement_template_singleton_budget_rel","reimbursement_template_id","integer",NULL
+"public","reimbursement_template_singleton_budget_rel","singleton_line_id","integer",NULL
+"public","rel_modules_langexport","wiz_id","integer",NULL
+"public","rel_modules_langexport","module_id","integer",NULL
+"public","report_layout","id","integer",NULL
+"public","report_layout","view_id","integer",NULL
+"public","report_layout","sequence","integer",NULL
+"public","report_layout","create_uid","integer",NULL
+"public","report_layout","write_uid","integer",NULL
+"public","report_layout","image","character varying",NULL
+"public","report_layout","pdf","character varying",NULL
+"public","report_layout","name","character varying",NULL
+"public","report_layout","create_date","timestamp without time zone",NULL
+"public","report_layout","write_date","timestamp without time zone",NULL
+"public","report_paperformat","id","integer",NULL
+"public","report_paperformat","page_height","integer",NULL
+"public","report_paperformat","page_width","integer",NULL
+"public","report_paperformat","header_spacing","integer",NULL
+"public","report_paperformat","dpi","integer",NULL
+"public","report_paperformat","create_uid","integer",NULL
+"public","report_paperformat","write_uid","integer",NULL
+"public","report_paperformat","name","character varying",NULL
+"public","report_paperformat","format","character varying",NULL
+"public","report_paperformat","orientation","character varying",NULL
+"public","report_paperformat","default","boolean",NULL
+"public","report_paperformat","header_line","boolean",NULL
+"public","report_paperformat","disable_shrinking","boolean",NULL
+"public","report_paperformat","css_margins","boolean",NULL
+"public","report_paperformat","create_date","timestamp without time zone",NULL
+"public","report_paperformat","write_date","timestamp without time zone",NULL
+"public","report_paperformat","margin_top","double precision",NULL
+"public","report_paperformat","margin_bottom","double precision",NULL
+"public","report_paperformat","margin_left","double precision",NULL
+"public","report_paperformat","margin_right","double precision",NULL
+"public","res_bank","id","integer",NULL
+"public","res_bank","state","integer",NULL
+"public","res_bank","country","integer",NULL
+"public","res_bank","create_uid","integer",NULL
+"public","res_bank","write_uid","integer",NULL
+"public","res_bank","name","character varying",NULL
+"public","res_bank","street","character varying",NULL
+"public","res_bank","street2","character varying",NULL
+"public","res_bank","zip","character varying",NULL
+"public","res_bank","city","character varying",NULL
+"public","res_bank","email","character varying",NULL
+"public","res_bank","phone","character varying",NULL
+"public","res_bank","bic","character varying",NULL
+"public","res_bank","active","boolean",NULL
+"public","res_bank","create_date","timestamp without time zone",NULL
+"public","res_bank","write_date","timestamp without time zone",NULL
+"public","res_company","id","integer",NULL
+"public","res_company","name","character varying",NULL
+"public","res_company","partner_id","integer",NULL
+"public","res_company","currency_id","integer",NULL
+"public","res_company","sequence","integer",NULL
+"public","res_company","create_date","timestamp without time zone",NULL
+"public","res_company","parent_path","character varying",NULL
+"public","res_company","parent_id","integer",NULL
+"public","res_company","paperformat_id","integer",NULL
+"public","res_company","external_report_layout_id","integer",NULL
+"public","res_company","create_uid","integer",NULL
+"public","res_company","write_uid","integer",NULL
+"public","res_company","email","character varying",NULL
+"public","res_company","phone","character varying",NULL
+"public","res_company","font","character varying",NULL
+"public","res_company","primary_color","character varying",NULL
+"public","res_company","secondary_color","character varying",NULL
+"public","res_company","layout_background","character varying",NULL
+"public","res_company","report_header","jsonb",NULL
+"public","res_company","report_footer","jsonb",NULL
+"public","res_company","company_details","jsonb",NULL
+"public","res_company","active","boolean",NULL
+"public","res_company","uses_default_logo","boolean",NULL
+"public","res_company","write_date","timestamp without time zone",NULL
+"public","res_company","logo_web","bytea",NULL
+"public","res_company","resource_calendar_id","integer",NULL
+"public","res_company","alias_domain_id","integer",NULL
+"public","res_company","email_primary_color","character varying",NULL
+"public","res_company","email_secondary_color","character varying",NULL
+"public","res_company","iap_enrich_auto_done","boolean",NULL
+"public","res_company","snailmail_color","boolean",NULL
+"public","res_company","snailmail_cover","boolean",NULL
+"public","res_company","snailmail_duplex","boolean",NULL
+"public","res_company_users_rel","cid","integer",NULL
+"public","res_company_users_rel","user_id","integer",NULL
+"public","res_config","id","integer",NULL
+"public","res_config","create_uid","integer",NULL
+"public","res_config","write_uid","integer",NULL
+"public","res_config","create_date","timestamp without time zone",NULL
+"public","res_config","write_date","timestamp without time zone",NULL
+"public","res_config_settings","id","integer",NULL
+"public","res_config_settings","create_uid","integer",NULL
+"public","res_config_settings","write_uid","integer",NULL
+"public","res_config_settings","create_date","timestamp without time zone",NULL
+"public","res_config_settings","write_date","timestamp without time zone",NULL
+"public","res_config_settings","web_app_name","character varying",NULL
+"public","res_config_settings","company_id","integer",NULL
+"public","res_config_settings","module_base_import","boolean",NULL
+"public","res_config_settings","module_google_calendar","boolean",NULL
+"public","res_config_settings","module_microsoft_calendar","boolean",NULL
+"public","res_config_settings","module_mail_plugin","boolean",NULL
+"public","res_config_settings","module_auth_oauth","boolean",NULL
+"public","res_config_settings","module_auth_ldap","boolean",NULL
+"public","res_config_settings","module_account_inter_company_rules","boolean",NULL
+"public","res_config_settings","module_voip","boolean",NULL
+"public","res_config_settings","module_web_unsplash","boolean",NULL
+"public","res_config_settings","module_sms","boolean",NULL
+"public","res_config_settings","module_partner_autocomplete","boolean",NULL
+"public","res_config_settings","module_base_geolocalize","boolean",NULL
+"public","res_config_settings","module_google_recaptcha","boolean",NULL
+"public","res_config_settings","module_website_cf_turnstile","boolean",NULL
+"public","res_config_settings","module_google_address_autocomplete","boolean",NULL
+"public","res_config_settings","group_multi_currency","boolean",NULL
+"public","res_config_settings","show_effect","boolean",NULL
+"public","res_config_settings","profiling_enabled_until","timestamp without time zone",NULL
+"public","res_config_settings","unsplash_access_key","character varying",NULL
+"public","res_config_settings","unsplash_app_id","character varying",NULL
+"public","res_config_settings","twilio_account_sid","character varying",NULL
+"public","res_config_settings","twilio_account_token","character varying",NULL
+"public","res_config_settings","sfu_server_url","character varying",NULL
+"public","res_config_settings","sfu_server_key","character varying",NULL
+"public","res_config_settings","tenor_api_key","character varying",NULL
+"public","res_config_settings","google_translate_api_key","character varying",NULL
+"public","res_config_settings","external_email_server_default","boolean",NULL
+"public","res_config_settings","module_google_gmail","boolean",NULL
+"public","res_config_settings","module_microsoft_outlook","boolean",NULL
+"public","res_config_settings","restrict_template_rendering","boolean",NULL
+"public","res_config_settings","use_twilio_rtc_servers","boolean",NULL
+"public","res_config_settings","use_sfu_server","boolean",NULL
+"public","res_config_settings","group_analytic_accounting","boolean",NULL
+"public","res_config_settings","auth_signup_template_user_id","integer",NULL
+"public","res_config_settings","auth_signup_uninvited","character varying",NULL
+"public","res_config_settings","auth_signup_reset_password","boolean",NULL
+"public","res_config_settings","auth_totp_policy","character varying",NULL
+"public","res_config_settings","auth_totp_enforce","boolean",NULL
+"public","res_config_settings","google_gmail_client_identifier","character varying",NULL
+"public","res_config_settings","google_gmail_client_secret","character varying",NULL
+"public","res_config_settings","microsoft_outlook_client_identifier","character varying",NULL
+"public","res_config_settings","microsoft_outlook_client_secret","character varying",NULL
+"public","res_config_settings","digest_id","integer",NULL
+"public","res_config_settings","digest_emails","boolean",NULL
+"public","res_country","id","integer",NULL
+"public","res_country","address_view_id","integer",NULL
+"public","res_country","currency_id","integer",NULL
+"public","res_country","phone_code","integer",NULL
+"public","res_country","create_uid","integer",NULL
+"public","res_country","write_uid","integer",NULL
+"public","res_country","code","character varying",2
+"public","res_country","name_position","character varying",NULL
+"public","res_country","name","jsonb",NULL
+"public","res_country","vat_label","jsonb",NULL
+"public","res_country","address_format","text",NULL
+"public","res_country","state_required","boolean",NULL
+"public","res_country","zip_required","boolean",NULL
+"public","res_country","create_date","timestamp without time zone",NULL
+"public","res_country","write_date","timestamp without time zone",NULL
+"public","res_country_group","id","integer",NULL
+"public","res_country_group","create_uid","integer",NULL
+"public","res_country_group","write_uid","integer",NULL
+"public","res_country_group","code","character varying",NULL
+"public","res_country_group","name","jsonb",NULL
+"public","res_country_group","create_date","timestamp without time zone",NULL
+"public","res_country_group","write_date","timestamp without time zone",NULL
+"public","res_country_res_country_group_rel","res_country_id","integer",NULL
+"public","res_country_res_country_group_rel","res_country_group_id","integer",NULL
+"public","res_country_state","id","integer",NULL
+"public","res_country_state","country_id","integer",NULL
+"public","res_country_state","create_uid","integer",NULL
+"public","res_country_state","write_uid","integer",NULL
+"public","res_country_state","name","character varying",NULL
+"public","res_country_state","code","character varying",NULL
+"public","res_country_state","create_date","timestamp without time zone",NULL
+"public","res_country_state","write_date","timestamp without time zone",NULL
+"public","res_currency","id","integer",NULL
+"public","res_currency","name","character varying",NULL
+"public","res_currency","symbol","character varying",NULL
+"public","res_currency","iso_numeric","integer",NULL
+"public","res_currency","decimal_places","integer",NULL
+"public","res_currency","create_uid","integer",NULL
+"public","res_currency","write_uid","integer",NULL
+"public","res_currency","full_name","character varying",NULL
+"public","res_currency","position","character varying",NULL
+"public","res_currency","currency_unit_label","jsonb",NULL
+"public","res_currency","currency_subunit_label","jsonb",NULL
+"public","res_currency","rounding","numeric",NULL
+"public","res_currency","active","boolean",NULL
+"public","res_currency","create_date","timestamp without time zone",NULL
+"public","res_currency","write_date","timestamp without time zone",NULL
+"public","res_currency_rate","id","integer",NULL
+"public","res_currency_rate","currency_id","integer",NULL
+"public","res_currency_rate","company_id","integer",NULL
+"public","res_currency_rate","create_uid","integer",NULL
+"public","res_currency_rate","write_uid","integer",NULL
+"public","res_currency_rate","name","date",NULL
+"public","res_currency_rate","rate","numeric",NULL
+"public","res_currency_rate","create_date","timestamp without time zone",NULL
+"public","res_currency_rate","write_date","timestamp without time zone",NULL
+"public","res_device","id","integer",NULL
+"public","res_device","user_id","integer",NULL
+"public","res_device","create_uid","integer",NULL
+"public","res_device","write_uid","integer",NULL
+"public","res_device","session_identifier","character varying",NULL
+"public","res_device","platform","character varying",NULL
+"public","res_device","browser","character varying",NULL
+"public","res_device","ip_address","character varying",NULL
+"public","res_device","country","character varying",NULL
+"public","res_device","city","character varying",NULL
+"public","res_device","device_type","character varying",NULL
+"public","res_device","revoked","boolean",NULL
+"public","res_device","first_activity","timestamp without time zone",NULL
+"public","res_device","last_activity","timestamp without time zone",NULL
+"public","res_device","create_date","timestamp without time zone",NULL
+"public","res_device","write_date","timestamp without time zone",NULL
+"public","res_device_log","id","integer",NULL
+"public","res_device_log","user_id","integer",NULL
+"public","res_device_log","create_uid","integer",NULL
+"public","res_device_log","write_uid","integer",NULL
+"public","res_device_log","session_identifier","character varying",NULL
+"public","res_device_log","platform","character varying",NULL
+"public","res_device_log","browser","character varying",NULL
+"public","res_device_log","ip_address","character varying",NULL
+"public","res_device_log","country","character varying",NULL
+"public","res_device_log","city","character varying",NULL
+"public","res_device_log","device_type","character varying",NULL
+"public","res_device_log","revoked","boolean",NULL
+"public","res_device_log","first_activity","timestamp without time zone",NULL
+"public","res_device_log","last_activity","timestamp without time zone",NULL
+"public","res_device_log","create_date","timestamp without time zone",NULL
+"public","res_device_log","write_date","timestamp without time zone",NULL
+"public","res_groups","id","integer",NULL
+"public","res_groups","name","jsonb",NULL
+"public","res_groups","sequence","integer",NULL
+"public","res_groups","privilege_id","integer",NULL
+"public","res_groups","create_uid","integer",NULL
+"public","res_groups","write_uid","integer",NULL
+"public","res_groups","comment","jsonb",NULL
+"public","res_groups","share","boolean",NULL
+"public","res_groups","create_date","timestamp without time zone",NULL
+"public","res_groups","write_date","timestamp without time zone",NULL
+"public","res_groups","api_key_duration","double precision",NULL
+"public","res_groups_implied_rel","gid","integer",NULL
+"public","res_groups_implied_rel","hid","integer",NULL
+"public","res_groups_privilege","id","integer",NULL
+"public","res_groups_privilege","sequence","integer",NULL
+"public","res_groups_privilege","category_id","integer",NULL
+"public","res_groups_privilege","create_uid","integer",NULL
+"public","res_groups_privilege","write_uid","integer",NULL
+"public","res_groups_privilege","placeholder","character varying",NULL
+"public","res_groups_privilege","name","jsonb",NULL
+"public","res_groups_privilege","description","text",NULL
+"public","res_groups_privilege","create_date","timestamp without time zone",NULL
+"public","res_groups_privilege","write_date","timestamp without time zone",NULL
+"public","res_groups_report_rel","uid","integer",NULL
+"public","res_groups_report_rel","gid","integer",NULL
+"public","res_groups_users_rel","gid","integer",NULL
+"public","res_groups_users_rel","uid","integer",NULL
+"public","res_lang","id","integer",NULL
+"public","res_lang","create_uid","integer",NULL
+"public","res_lang","write_uid","integer",NULL
+"public","res_lang","name","character varying",NULL
+"public","res_lang","code","character varying",NULL
+"public","res_lang","iso_code","character varying",NULL
+"public","res_lang","url_code","character varying",NULL
+"public","res_lang","direction","character varying",NULL
+"public","res_lang","date_format","character varying",NULL
+"public","res_lang","time_format","character varying",NULL
+"public","res_lang","week_start","character varying",NULL
+"public","res_lang","grouping","character varying",NULL
+"public","res_lang","decimal_point","character varying",NULL
+"public","res_lang","thousands_sep","character varying",NULL
+"public","res_lang","active","boolean",NULL
+"public","res_lang","create_date","timestamp without time zone",NULL
+"public","res_lang","write_date","timestamp without time zone",NULL
+"public","res_lang_install_rel","language_wizard_id","integer",NULL
+"public","res_lang_install_rel","lang_id","integer",NULL
+"public","res_partner","id","integer",NULL
+"public","res_partner","company_id","integer",NULL
+"public","res_partner","create_date","timestamp without time zone",NULL
+"public","res_partner","name","character varying",NULL
+"public","res_partner","parent_id","integer",NULL
+"public","res_partner","user_id","integer",NULL
+"public","res_partner","state_id","integer",NULL
+"public","res_partner","country_id","integer",NULL
+"public","res_partner","industry_id","integer",NULL
+"public","res_partner","color","integer",NULL
+"public","res_partner","commercial_partner_id","integer",NULL
+"public","res_partner","create_uid","integer",NULL
+"public","res_partner","write_uid","integer",NULL
+"public","res_partner","complete_name","character varying",NULL
+"public","res_partner","ref","character varying",NULL
+"public","res_partner","lang","character varying",NULL
+"public","res_partner","tz","character varying",NULL
+"public","res_partner","vat","character varying",NULL
+"public","res_partner","company_registry","character varying",NULL
+"public","res_partner","website","character varying",NULL
+"public","res_partner","function","character varying",NULL
+"public","res_partner","type","character varying",NULL
+"public","res_partner","street","character varying",NULL
+"public","res_partner","street2","character varying",NULL
+"public","res_partner","zip","character varying",NULL
+"public","res_partner","city","character varying",NULL
+"public","res_partner","email","character varying",NULL
+"public","res_partner","phone","character varying",NULL
+"public","res_partner","commercial_company_name","character varying",NULL
+"public","res_partner","company_name","character varying",NULL
+"public","res_partner","properties","jsonb",NULL
+"public","res_partner","barcode","jsonb",NULL
+"public","res_partner","comment","text",NULL
+"public","res_partner","partner_latitude","numeric",NULL
+"public","res_partner","partner_longitude","numeric",NULL
+"public","res_partner","active","boolean",NULL
+"public","res_partner","employee","boolean",NULL
+"public","res_partner","is_company","boolean",NULL
+"public","res_partner","partner_share","boolean",NULL
+"public","res_partner","write_date","timestamp without time zone",NULL
+"public","res_partner","message_bounce","integer",NULL
+"public","res_partner","email_normalized","character varying",NULL
+"public","res_partner","signup_type","character varying",NULL
+"public","res_partner","phone_sanitized","character varying",NULL
+"public","res_partner_bank","id","integer",NULL
+"public","res_partner_bank","partner_id","integer",NULL
+"public","res_partner_bank","bank_id","integer",NULL
+"public","res_partner_bank","sequence","integer",NULL
+"public","res_partner_bank","currency_id","integer",NULL
+"public","res_partner_bank","company_id","integer",NULL
+"public","res_partner_bank","create_uid","integer",NULL
+"public","res_partner_bank","write_uid","integer",NULL
+"public","res_partner_bank","acc_number","character varying",NULL
+"public","res_partner_bank","clearing_number","character varying",NULL
+"public","res_partner_bank","sanitized_acc_number","character varying",NULL
+"public","res_partner_bank","acc_holder_name","character varying",NULL
+"public","res_partner_bank","note","text",NULL
+"public","res_partner_bank","active","boolean",NULL
+"public","res_partner_bank","allow_out_payment","boolean",NULL
+"public","res_partner_bank","create_date","timestamp without time zone",NULL
+"public","res_partner_bank","write_date","timestamp without time zone",NULL
+"public","res_partner_category","id","integer",NULL
+"public","res_partner_category","color","integer",NULL
+"public","res_partner_category","parent_id","integer",NULL
+"public","res_partner_category","create_uid","integer",NULL
+"public","res_partner_category","write_uid","integer",NULL
+"public","res_partner_category","parent_path","character varying",NULL
+"public","res_partner_category","name","jsonb",NULL
+"public","res_partner_category","active","boolean",NULL
+"public","res_partner_category","create_date","timestamp without time zone",NULL
+"public","res_partner_category","write_date","timestamp without time zone",NULL
+"public","res_partner_industry","id","integer",NULL
+"public","res_partner_industry","create_uid","integer",NULL
+"public","res_partner_industry","write_uid","integer",NULL
+"public","res_partner_industry","name","jsonb",NULL
+"public","res_partner_industry","full_name","jsonb",NULL
+"public","res_partner_industry","active","boolean",NULL
+"public","res_partner_industry","create_date","timestamp without time zone",NULL
+"public","res_partner_industry","write_date","timestamp without time zone",NULL
+"public","res_partner_res_partner_category_rel","category_id","integer",NULL
+"public","res_partner_res_partner_category_rel","partner_id","integer",NULL
+"public","res_partner_task_share_wizard_rel","task_share_wizard_id","integer",NULL
+"public","res_partner_task_share_wizard_rel","res_partner_id","integer",NULL
+"public","res_role","id","integer",NULL
+"public","res_role","create_uid","integer",NULL
+"public","res_role","write_uid","integer",NULL
+"public","res_role","name","character varying",NULL
+"public","res_role","create_date","timestamp without time zone",NULL
+"public","res_role","write_date","timestamp without time zone",NULL
+"public","res_role_res_users_rel","res_role_id","integer",NULL
+"public","res_role_res_users_rel","res_users_id","integer",NULL
+"public","res_users","id","integer",NULL
+"public","res_users","company_id","integer",NULL
+"public","res_users","partner_id","integer",NULL
+"public","res_users","active","boolean",NULL
+"public","res_users","create_date","timestamp without time zone",NULL
+"public","res_users","login","character varying",NULL
+"public","res_users","password","character varying",NULL
+"public","res_users","action_id","integer",NULL
+"public","res_users","create_uid","integer",NULL
+"public","res_users","write_uid","integer",NULL
+"public","res_users","signature","text",NULL
+"public","res_users","share","boolean",NULL
+"public","res_users","write_date","timestamp without time zone",NULL
+"public","res_users","totp_last_counter","integer",NULL
+"public","res_users","totp_secret","character varying",NULL
+"public","res_users","tour_enabled","boolean",NULL
+"public","res_users","notification_type","character varying",NULL
+"public","res_users","manual_im_status","character varying",NULL
+"public","res_users","out_of_office_message","text",NULL
+"public","res_users","out_of_office_from","timestamp without time zone",NULL
+"public","res_users","out_of_office_to","timestamp without time zone",NULL
+"public","res_users","odoobot_state","character varying",NULL
+"public","res_users","odoobot_failed","boolean",NULL
+"public","res_users_apikeys","id","integer",NULL
+"public","res_users_apikeys","name","character varying",NULL
+"public","res_users_apikeys","user_id","integer",NULL
+"public","res_users_apikeys","scope","character varying",NULL
+"public","res_users_apikeys","expiration_date","timestamp without time zone",NULL
+"public","res_users_apikeys","index","character varying",8
+"public","res_users_apikeys","key","character varying",NULL
+"public","res_users_apikeys","create_date","timestamp without time zone",NULL
+"public","res_users_apikeys_description","id","integer",NULL
+"public","res_users_apikeys_description","create_uid","integer",NULL
+"public","res_users_apikeys_description","write_uid","integer",NULL
+"public","res_users_apikeys_description","name","character varying",NULL
+"public","res_users_apikeys_description","duration","character varying",NULL
+"public","res_users_apikeys_description","expiration_date","timestamp without time zone",NULL
+"public","res_users_apikeys_description","create_date","timestamp without time zone",NULL
+"public","res_users_apikeys_description","write_date","timestamp without time zone",NULL
+"public","res_users_deletion","id","integer",NULL
+"public","res_users_deletion","user_id","integer",NULL
+"public","res_users_deletion","user_id_int","integer",NULL
+"public","res_users_deletion","create_uid","integer",NULL
+"public","res_users_deletion","write_uid","integer",NULL
+"public","res_users_deletion","state","character varying",NULL
+"public","res_users_deletion","create_date","timestamp without time zone",NULL
+"public","res_users_deletion","write_date","timestamp without time zone",NULL
+"public","res_users_identitycheck","id","integer",NULL
+"public","res_users_identitycheck","create_uid","integer",NULL
+"public","res_users_identitycheck","write_uid","integer",NULL
+"public","res_users_identitycheck","request","character varying",NULL
+"public","res_users_identitycheck","auth_method","character varying",NULL
+"public","res_users_identitycheck","create_date","timestamp without time zone",NULL
+"public","res_users_identitycheck","write_date","timestamp without time zone",NULL
+"public","res_users_log","id","integer",NULL
+"public","res_users_log","create_uid","integer",NULL
+"public","res_users_log","write_uid","integer",NULL
+"public","res_users_log","create_date","timestamp without time zone",NULL
+"public","res_users_log","write_date","timestamp without time zone",NULL
+"public","res_users_settings","id","integer",NULL
+"public","res_users_settings","user_id","integer",NULL
+"public","res_users_settings","create_uid","integer",NULL
+"public","res_users_settings","write_uid","integer",NULL
+"public","res_users_settings","create_date","timestamp without time zone",NULL
+"public","res_users_settings","write_date","timestamp without time zone",NULL
+"public","res_users_settings","voice_active_duration","integer",NULL
+"public","res_users_settings","push_to_talk_key","character varying",NULL
+"public","res_users_settings","channel_notifications","character varying",NULL
+"public","res_users_settings","is_discuss_sidebar_category_channel_open","boolean",NULL
+"public","res_users_settings","is_discuss_sidebar_category_chat_open","boolean",NULL
+"public","res_users_settings","use_push_to_talk","boolean",NULL
+"public","res_users_settings_embedded_action","id","integer",NULL
+"public","res_users_settings_embedded_action","user_setting_id","integer",NULL
+"public","res_users_settings_embedded_action","action_id","integer",NULL
+"public","res_users_settings_embedded_action","res_id","integer",NULL
+"public","res_users_settings_embedded_action","create_uid","integer",NULL
+"public","res_users_settings_embedded_action","write_uid","integer",NULL
+"public","res_users_settings_embedded_action","res_model","character varying",NULL
+"public","res_users_settings_embedded_action","embedded_actions_order","character varying",NULL
+"public","res_users_settings_embedded_action","embedded_actions_visibility","character varying",NULL
+"public","res_users_settings_embedded_action","embedded_visibility","boolean",NULL
+"public","res_users_settings_embedded_action","create_date","timestamp without time zone",NULL
+"public","res_users_settings_embedded_action","write_date","timestamp without time zone",NULL
+"public","res_users_settings_volumes","id","integer",NULL
+"public","res_users_settings_volumes","user_setting_id","integer",NULL
+"public","res_users_settings_volumes","partner_id","integer",NULL
+"public","res_users_settings_volumes","guest_id","integer",NULL
+"public","res_users_settings_volumes","create_uid","integer",NULL
+"public","res_users_settings_volumes","write_uid","integer",NULL
+"public","res_users_settings_volumes","create_date","timestamp without time zone",NULL
+"public","res_users_settings_volumes","write_date","timestamp without time zone",NULL
+"public","res_users_settings_volumes","volume","double precision",NULL
+"public","res_users_web_tour_tour_rel","web_tour_tour_id","integer",NULL
+"public","res_users_web_tour_tour_rel","res_users_id","integer",NULL
+"public","reset_view_arch_wizard","id","integer",NULL
+"public","reset_view_arch_wizard","view_id","integer",NULL
+"public","reset_view_arch_wizard","compare_view_id","integer",NULL
+"public","reset_view_arch_wizard","create_uid","integer",NULL
+"public","reset_view_arch_wizard","write_uid","integer",NULL
+"public","reset_view_arch_wizard","reset_mode","character varying",NULL
+"public","reset_view_arch_wizard","create_date","timestamp without time zone",NULL
+"public","reset_view_arch_wizard","write_date","timestamp without time zone",NULL
+"public","resource_calendar","id","integer",NULL
+"public","resource_calendar","company_id","integer",NULL
+"public","resource_calendar","create_uid","integer",NULL
+"public","resource_calendar","write_uid","integer",NULL
+"public","resource_calendar","name","character varying",NULL
+"public","resource_calendar","schedule_type","character varying",NULL
+"public","resource_calendar","tz","character varying",NULL
+"public","resource_calendar","hours_per_day","numeric",NULL
+"public","resource_calendar","active","boolean",NULL
+"public","resource_calendar","duration_based","boolean",NULL
+"public","resource_calendar","flexible_hours","boolean",NULL
+"public","resource_calendar","two_weeks_calendar","boolean",NULL
+"public","resource_calendar","create_date","timestamp without time zone",NULL
+"public","resource_calendar","write_date","timestamp without time zone",NULL
+"public","resource_calendar","full_time_required_hours","double precision",NULL
+"public","resource_calendar","hours_per_week","double precision",NULL
+"public","resource_calendar_attendance","id","integer",NULL
+"public","resource_calendar_attendance","calendar_id","integer",NULL
+"public","resource_calendar_attendance","sequence","integer",NULL
+"public","resource_calendar_attendance","create_uid","integer",NULL
+"public","resource_calendar_attendance","write_uid","integer",NULL
+"public","resource_calendar_attendance","name","character varying",NULL
+"public","resource_calendar_attendance","dayofweek","character varying",NULL
+"public","resource_calendar_attendance","day_period","character varying",NULL
+"public","resource_calendar_attendance","week_type","character varying",NULL
+"public","resource_calendar_attendance","display_type","character varying",NULL
+"public","resource_calendar_attendance","create_date","timestamp without time zone",NULL
+"public","resource_calendar_attendance","write_date","timestamp without time zone",NULL
+"public","resource_calendar_attendance","hour_from","double precision",NULL
+"public","resource_calendar_attendance","hour_to","double precision",NULL
+"public","resource_calendar_attendance","duration_hours","double precision",NULL
+"public","resource_calendar_attendance","duration_days","double precision",NULL
+"public","resource_calendar_leaves","id","integer",NULL
+"public","resource_calendar_leaves","company_id","integer",NULL
+"public","resource_calendar_leaves","calendar_id","integer",NULL
+"public","resource_calendar_leaves","resource_id","integer",NULL
+"public","resource_calendar_leaves","create_uid","integer",NULL
+"public","resource_calendar_leaves","write_uid","integer",NULL
+"public","resource_calendar_leaves","name","character varying",NULL
+"public","resource_calendar_leaves","time_type","character varying",NULL
+"public","resource_calendar_leaves","date_from","timestamp without time zone",NULL
+"public","resource_calendar_leaves","date_to","timestamp without time zone",NULL
+"public","resource_calendar_leaves","create_date","timestamp without time zone",NULL
+"public","resource_calendar_leaves","write_date","timestamp without time zone",NULL
+"public","resource_resource","id","integer",NULL
+"public","resource_resource","company_id","integer",NULL
+"public","resource_resource","user_id","integer",NULL
+"public","resource_resource","calendar_id","integer",NULL
+"public","resource_resource","create_uid","integer",NULL
+"public","resource_resource","write_uid","integer",NULL
+"public","resource_resource","name","character varying",NULL
+"public","resource_resource","resource_type","character varying",NULL
+"public","resource_resource","tz","character varying",NULL
+"public","resource_resource","active","boolean",NULL
+"public","resource_resource","create_date","timestamp without time zone",NULL
+"public","resource_resource","write_date","timestamp without time zone",NULL
+"public","resource_resource","time_efficiency","double precision",NULL
+"public","resource_resource","color","integer",NULL
+"public","rule_group_rel","rule_group_id","integer",NULL
+"public","rule_group_rel","group_id","integer",NULL
+"public","scheduled_message_attachment_rel","scheduled_message_id","integer",NULL
+"public","scheduled_message_attachment_rel","attachment_id","integer",NULL
+"public","server_action_history_wizard","id","integer",NULL
+"public","server_action_history_wizard","action_id","integer",NULL
+"public","server_action_history_wizard","revision","integer",NULL
+"public","server_action_history_wizard","create_uid","integer",NULL
+"public","server_action_history_wizard","write_uid","integer",NULL
+"public","server_action_history_wizard","create_date","timestamp without time zone",NULL
+"public","server_action_history_wizard","write_date","timestamp without time zone",NULL
+"public","sms_account_code","id","integer",NULL
+"public","sms_account_code","account_id","integer",NULL
+"public","sms_account_code","create_uid","integer",NULL
+"public","sms_account_code","write_uid","integer",NULL
+"public","sms_account_code","verification_code","character varying",NULL
+"public","sms_account_code","create_date","timestamp without time zone",NULL
+"public","sms_account_code","write_date","timestamp without time zone",NULL
+"public","sms_account_phone","id","integer",NULL
+"public","sms_account_phone","account_id","integer",NULL
+"public","sms_account_phone","create_uid","integer",NULL
+"public","sms_account_phone","write_uid","integer",NULL
+"public","sms_account_phone","phone_number","character varying",NULL
+"public","sms_account_phone","create_date","timestamp without time zone",NULL
+"public","sms_account_phone","write_date","timestamp without time zone",NULL
+"public","sms_account_sender","id","integer",NULL
+"public","sms_account_sender","account_id","integer",NULL
+"public","sms_account_sender","create_uid","integer",NULL
+"public","sms_account_sender","write_uid","integer",NULL
+"public","sms_account_sender","sender_name","character varying",NULL
+"public","sms_account_sender","create_date","timestamp without time zone",NULL
+"public","sms_account_sender","write_date","timestamp without time zone",NULL
+"public","sms_composer","id","integer",NULL
+"public","sms_composer","res_id","integer",NULL
+"public","sms_composer","template_id","integer",NULL
+"public","sms_composer","create_uid","integer",NULL
+"public","sms_composer","write_uid","integer",NULL
+"public","sms_composer","composition_mode","character varying",NULL
+"public","sms_composer","res_model","character varying",NULL
+"public","sms_composer","res_ids","character varying",NULL
+"public","sms_composer","recipient_single_number_itf","character varying",NULL
+"public","sms_composer","number_field_name","character varying",NULL
+"public","sms_composer","numbers","character varying",NULL
+"public","sms_composer","body","text",NULL
+"public","sms_composer","mass_keep_log","boolean",NULL
+"public","sms_composer","mass_force_send","boolean",NULL
+"public","sms_composer","use_exclusion_list","boolean",NULL
+"public","sms_composer","create_date","timestamp without time zone",NULL
+"public","sms_composer","write_date","timestamp without time zone",NULL
+"public","sms_sms","id","integer",NULL
+"public","sms_sms","partner_id","integer",NULL
+"public","sms_sms","mail_message_id","integer",NULL
+"public","sms_sms","create_uid","integer",NULL
+"public","sms_sms","write_uid","integer",NULL
+"public","sms_sms","uuid","character varying",NULL
+"public","sms_sms","number","character varying",NULL
+"public","sms_sms","state","character varying",NULL
+"public","sms_sms","failure_type","character varying",NULL
+"public","sms_sms","body","text",NULL
+"public","sms_sms","to_delete","boolean",NULL
+"public","sms_sms","create_date","timestamp without time zone",NULL
+"public","sms_sms","write_date","timestamp without time zone",NULL
+"public","sms_template","id","integer",NULL
+"public","sms_template","model_id","integer",NULL
+"public","sms_template","sidebar_action_id","integer",NULL
+"public","sms_template","create_uid","integer",NULL
+"public","sms_template","write_uid","integer",NULL
+"public","sms_template","template_fs","character varying",NULL
+"public","sms_template","lang","character varying",NULL
+"public","sms_template","model","character varying",NULL
+"public","sms_template","name","jsonb",NULL
+"public","sms_template","body","jsonb",NULL
+"public","sms_template","create_date","timestamp without time zone",NULL
+"public","sms_template","write_date","timestamp without time zone",NULL
+"public","sms_template_preview","id","integer",NULL
+"public","sms_template_preview","sms_template_id","integer",NULL
+"public","sms_template_preview","create_uid","integer",NULL
+"public","sms_template_preview","write_uid","integer",NULL
+"public","sms_template_preview","lang","character varying",NULL
+"public","sms_template_preview","resource_ref","character varying",NULL
+"public","sms_template_preview","create_date","timestamp without time zone",NULL
+"public","sms_template_preview","write_date","timestamp without time zone",NULL
+"public","sms_template_reset","id","integer",NULL
+"public","sms_template_reset","create_uid","integer",NULL
+"public","sms_template_reset","write_uid","integer",NULL
+"public","sms_template_reset","create_date","timestamp without time zone",NULL
+"public","sms_template_reset","write_date","timestamp without time zone",NULL
+"public","sms_template_sms_template_reset_rel","sms_template_reset_id","integer",NULL
+"public","sms_template_sms_template_reset_rel","sms_template_id","integer",NULL
+"public","sms_tracker","id","integer",NULL
+"public","sms_tracker","mail_notification_id","integer",NULL
+"public","sms_tracker","create_uid","integer",NULL
+"public","sms_tracker","write_uid","integer",NULL
+"public","sms_tracker","sms_uuid","character varying",NULL
+"public","sms_tracker","create_date","timestamp without time zone",NULL
+"public","sms_tracker","write_date","timestamp without time zone",NULL
+"public","snailmail_letter","id","integer",NULL
+"public","snailmail_letter","user_id","integer",NULL
+"public","snailmail_letter","res_id","integer",NULL
+"public","snailmail_letter","partner_id","integer",NULL
+"public","snailmail_letter","company_id","integer",NULL
+"public","snailmail_letter","report_template","integer",NULL
+"public","snailmail_letter","attachment_id","integer",NULL
+"public","snailmail_letter","message_id","integer",NULL
+"public","snailmail_letter","state_id","integer",NULL
+"public","snailmail_letter","country_id","integer",NULL
+"public","snailmail_letter","create_uid","integer",NULL
+"public","snailmail_letter","write_uid","integer",NULL
+"public","snailmail_letter","model","character varying",NULL
+"public","snailmail_letter","state","character varying",NULL
+"public","snailmail_letter","error_code","character varying",NULL
+"public","snailmail_letter","street","character varying",NULL
+"public","snailmail_letter","street2","character varying",NULL
+"public","snailmail_letter","zip","character varying",NULL
+"public","snailmail_letter","city","character varying",NULL
+"public","snailmail_letter","info_msg","text",NULL
+"public","snailmail_letter","color","boolean",NULL
+"public","snailmail_letter","cover","boolean",NULL
+"public","snailmail_letter","duplex","boolean",NULL
+"public","snailmail_letter","create_date","timestamp without time zone",NULL
+"public","snailmail_letter","write_date","timestamp without time zone",NULL
+"public","uom_uom","id","integer",NULL
+"public","uom_uom","sequence","integer",NULL
+"public","uom_uom","relative_uom_id","integer",NULL
+"public","uom_uom","create_uid","integer",NULL
+"public","uom_uom","write_uid","integer",NULL
+"public","uom_uom","parent_path","character varying",NULL
+"public","uom_uom","name","jsonb",NULL
+"public","uom_uom","relative_factor","numeric",NULL
+"public","uom_uom","factor","numeric",NULL
+"public","uom_uom","active","boolean",NULL
+"public","uom_uom","create_date","timestamp without time zone",NULL
+"public","uom_uom","write_date","timestamp without time zone",NULL
+"public","web_tour_tour","id","integer",NULL
+"public","web_tour_tour","sequence","integer",NULL
+"public","web_tour_tour","create_uid","integer",NULL
+"public","web_tour_tour","write_uid","integer",NULL
+"public","web_tour_tour","name","character varying",NULL
+"public","web_tour_tour","url","character varying",NULL
+"public","web_tour_tour","rainbow_man_message","jsonb",NULL
+"public","web_tour_tour","custom","boolean",NULL
+"public","web_tour_tour","create_date","timestamp without time zone",NULL
+"public","web_tour_tour","write_date","timestamp without time zone",NULL
+"public","web_tour_tour_step","id","integer",NULL
+"public","web_tour_tour_step","tour_id","integer",NULL
+"public","web_tour_tour_step","sequence","integer",NULL
+"public","web_tour_tour_step","create_uid","integer",NULL
+"public","web_tour_tour_step","write_uid","integer",NULL
+"public","web_tour_tour_step","trigger","character varying",NULL
+"public","web_tour_tour_step","content","character varying",NULL
+"public","web_tour_tour_step","tooltip_position","character varying",NULL
+"public","web_tour_tour_step","run","character varying",NULL
+"public","web_tour_tour_step","create_date","timestamp without time zone",NULL
+"public","web_tour_tour_step","write_date","timestamp without time zone",NULL
+"public","wizard_ir_model_menu_create","id","integer",NULL
+"public","wizard_ir_model_menu_create","menu_id","integer",NULL
+"public","wizard_ir_model_menu_create","create_uid","integer",NULL
+"public","wizard_ir_model_menu_create","write_uid","integer",NULL
+"public","wizard_ir_model_menu_create","name","character varying",NULL
+"public","wizard_ir_model_menu_create","create_date","timestamp without time zone",NULL
+"public","wizard_ir_model_menu_create","write_date","timestamp without time zone",NULL
