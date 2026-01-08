@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <!-- LIST -->
+  <record id="view_project_contract_list" model="ir.ui.view">
+    <field name="name">project.contract.list</field>
+    <field name="model">project.contract</field>
+    <field name="arch" type="xml">
+      <!-- allow delete; actual protection is in ProjectContract.unlink() -->
+      <list string="Contracte" create="1" delete="1">
+        <button name="action_open_details" type="object" string="Detalii" class="btn-secondary"/>
+	<button name="action_open_files" type="object" string="Fișiere" class="btn-secondary"/>
+	<button name="action_add_file" type="object" string="Adaugă fișier" class="btn-primary"/>
+
+        <field name="award_state"/>
+        <field name="contract_name"/>
+        <field name="contract_number"/>
+        <field name="contract_date"/>
+        <field name="supplier_name"/>
+        <field name="contract_type"/>
+        <field name="procedure_type"/>
+        <field name="seap_number"/>
+        <field name="seap_date"/>
+        <field name="start_date"/>
+        <field name="end_date"/>
+        <field name="amount_total"/>
+      </list>
+    </field>
+  </record>
+
+  <!-- FORM: HEADER ONLY (pentru create rapid) -->
+  <record id="view_project_contract_form_header" model="ir.ui.view">
+    <field name="name">project.contract.form.header</field>
+    <field name="model">project.contract</field>
+    <field name="arch" type="xml">
+      <form string="Contract">
+        <sheet>
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="currency_id" invisible="1"/>
+
+            <field name="contract_name"/>
+            <field name="contract_number"/>
+            <field name="contract_date"/>
+
+            <field name="contract_type"/>
+            <field name="award_state"/>
+            <field name="procedure_type"/>
+
+            <field name="seap_number"/>
+            <field name="seap_date"/>
+
+            <field name="supplier_name"/>
+
+            <field name="start_date"/>
+            <field name="end_date"/>
+
+            <field name="activity_id"/>
+            <field name="acquisition_id"/>
+          </group>
+
+          <group>
+            <field name="amount_base_total" readonly="1"/>
+            <field name="amount_vat_total" readonly="1"/>
+            <field name="amount_total" readonly="1"/>
+          </group>
+
+          <div class="o_form_label text-muted">
+            Pentru linii, folosește butonul “Detalii” din listă.
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- FORM: DETAILS (header + linii) -->
+  <record id="view_project_contract_form_details" model="ir.ui.view">
+    <field name="name">project.contract.form.details</field>
+    <field name="model">project.contract</field>
+    <field name="arch" type="xml">
+      <form string="Detalii contract">
+        <sheet>
+
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="currency_id" invisible="1"/>
+
+            <field name="contract_name" readonly="1"/>
+            <field name="contract_number" readonly="1"/>
+            <field name="contract_date" readonly="1"/>
+            <field name="supplier_name" readonly="1"/>
+
+            <field name="activity_id" readonly="1"/>
+            <field name="acquisition_id" readonly="1"/>
+          </group>
+
+          <notebook>
+            <page string="Linii contract">
+              <field name="line_ids" nolabel="1" context="{'form_view_ref': 'project_implementation.view_project_contract_line_form'}">
+                <!-- allow delete; actual protection is in ProjectContractLine.unlink() -->
+                <list create="1" delete="1">
+                  <field name="contract_id" invisible="1" readonly="1"/>
+
+                  <field name="budget_proxy_line_id"/>
+                  <field name="base_amount"/>
+                  <field name="vat_rate"/>
+                  <field name="vat_amount"/>
+                  <field name="total_amount" readonly="1"/>
+                  <field name="name"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Sumar">
+              <group>
+                <field name="amount_base_total" readonly="1"/>
+                <field name="amount_vat_total" readonly="1"/>
+                <field name="amount_total" readonly="1"/>
+              </group>
+            </page>
+          </notebook>
+
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- FORM POPUP pentru liniile de contract -->
+  <record id="view_project_contract_line_form" model="ir.ui.view">
+    <field name="name">project.contract.line.form</field>
+    <field name="model">project.contract.line</field>
+    <field name="arch" type="xml">
+      <form string="Linie contract">
+        <sheet>
+          <group>
+            <field name="contract_id" invisible="1" readonly="1"/>
+            <field name="budget_proxy_line_id"/>
+            <field name="base_amount"/>
+            <field name="vat_rate"/>
+            <field name="vat_amount"/>
+            <field name="total_amount" readonly="1"/>
+            <field name="name"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

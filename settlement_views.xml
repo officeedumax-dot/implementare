@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <!-- Header form (similar cu Documente header) -->
+  <record id="view_project_settlement_form_header" model="ir.ui.view">
+    <field name="name">project.settlement.form.header</field>
+    <field name="model">project.settlement</field>
+    <field name="arch" type="xml">
+      <form string="Decontare">
+        <sheet>
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="settlement_number"/>
+            <field name="settlement_date"/>
+            <field name="aport_valoare" readonly="1"/>
+          </group>
+
+          <group>
+            <field name="amount_elig_base_total" readonly="1"/>
+            <field name="amount_elig_vat_total" readonly="1"/>
+            <field name="amount_total" readonly="1"/>
+          </group>
+
+          <group>
+            <field name="notes"/>
+          </group>
+
+          <div class="o_form_label text-muted">
+            Pentru liniile de decontare folosește butonul “Detalii”.
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- Details popup form -->
+  <record id="view_project_settlement_form_details" model="ir.ui.view">
+    <field name="name">project.settlement.form.details</field>
+    <field name="model">project.settlement</field>
+    <field name="arch" type="xml">
+      <form string="Detalii decontare">
+        <sheet>
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="settlement_number" readonly="1"/>
+            <field name="settlement_date" readonly="1"/>
+            <field name="aport_valoare" readonly="1"/>
+          </group>
+
+          <notebook>
+            <page string="Linii decontare">
+              <field name="line_ids" nolabel="1"
+                     context="{'form_view_ref': 'project_implementation.view_project_settlement_line_form'}">
+                <list create="1" delete="1">
+                  <field name="document_line_id"/>
+
+                  <field name="document_number" readonly="1"/>
+                  <field name="document_date" readonly="1"/>
+                  <field name="issuer_name" readonly="1"/>
+
+                  <field name="elig_base_amount"/>
+                  <field name="elig_vat_amount"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Sumar">
+              <group>
+                <field name="amount_elig_base_total" readonly="1"/>
+                <field name="amount_elig_vat_total" readonly="1"/>
+                <field name="amount_total" readonly="1"/>
+              </group>
+            </page>
+
+            <page string="Observații">
+              <field name="notes" nolabel="1"/>
+            </page>
+          </notebook>
+
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- Settlement line form (opened from one2many) -->
+<record id="view_project_settlement_line_form" model="ir.ui.view">
+  <field name="name">project.settlement.line.form</field>
+  <field name="model">project.settlement.line</field>
+  <field name="arch" type="xml">
+    <form string="Linie decontare">
+      <sheet>
+        <group>
+          <field name="settlement_id" invisible="1"/>
+          <field name="document_line_id"/>
+
+          <field name="document_number" readonly="1"/>
+          <field name="document_date" readonly="1"/>
+          <field name="issuer_name" readonly="1"/>
+        </group>
+
+        <group string="Sume eligibile decontate (această linie)">
+          <field name="elig_base_amount"/>
+          <field name="elig_vat_amount"/>
+        </group>
+
+        <separator string="Linie Deviz"/>
+
+        <group>
+          <group string="Rând 1 (Plan din deviz)">
+            <field name="budget_elig_base" readonly="1"/>
+            <field name="budget_elig_vat" readonly="1"/>
+            <field name="budget_neramb_base" readonly="1"/>
+            <field name="budget_neramb_vat" readonly="1"/>
+          </group>
+
+          <group string="Rând 2 (Decontat total pe linia deviz)">
+            <field name="budget_settled_base" readonly="1"/>
+            <field name="budget_settled_vat" readonly="1"/>
+            <field name="budget_settled_total" readonly="1"/>
+          </group>
+
+          <group string="Rând 3 (Diferență)">
+            <field name="budget_diff_base" readonly="1"/>
+            <field name="budget_diff_vat" readonly="1"/>
+            <field name="budget_diff_total" readonly="1"/>
+          </group>
+        </group>
+
+        <separator string="Linie Document"/>
+
+        <group>
+          <group string="Rând 1 (Plan din document)">
+            <field name="doc_elig_base" readonly="1"/>
+            <field name="doc_elig_vat" readonly="1"/>
+            <field name="doc_neramb_base" readonly="1"/>
+            <field name="doc_neramb_vat" readonly="1"/>
+          </group>
+
+          <group string="Rând 2 (Decontat total pe linia document)">
+            <field name="doc_settled_base" readonly="1"/>
+            <field name="doc_settled_vat" readonly="1"/>
+          </group>
+
+          <group string="Rând 3 (Diferență)">
+            <field name="doc_diff_base" readonly="1"/>
+            <field name="doc_diff_vat" readonly="1"/>
+          </group>
+        </group>
+
+      </sheet>
+    </form>
+  </field>
+</record>
+
+</odoo>

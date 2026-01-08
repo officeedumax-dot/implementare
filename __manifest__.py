@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+{
+    "name": "Project Implementation",
+    "version": "1.0.2",
+    "summary": "UI helpers for creating/opening project implementations",
+    "description": "Adds a Manage Implementation button and a list of funded projects with status 'contractat'.",
+    "author": "officeedumax-dot",
+    "license": "AGPL-3",
+    "category": "Project",
+    'depends': [
+        'base',
+        'web',
+        'project_funding',
+    ],
+	'data': [
+	  'security/ir.model.access.csv',
+	  'views/implementation_tree.xml',
+	  'views/implementation_views.xml',
+	  'views/create_implementation_wizard.xml',
+	  'views/implementation_menu.xml',
+	  'views/contract_views.xml',
+	  'views/document_views.xml',
+          'views/settlement_views.xml',
+	  'views/implementation_budget_views.xml',
+          'views/project_file_views.xml',
+	  'views/project_file_add_wizard_views.xml',
+	],
+    'installable': True,
+    'application': True,
+}

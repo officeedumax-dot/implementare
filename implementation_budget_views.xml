@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record id="view_project_implementation_budget_line_form_details" model="ir.ui.view">
+    <field name="name">project.implementation.budget.line.form.details</field>
+    <field name="model">project.implementation.budget.line</field>
+    <field name="arch" type="xml">
+      <form string="Detalii linie deviz">
+        <sheet>
+
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="funding_budget_line_id" invisible="1"/>
+
+            <field name="chapter" readonly="1"/>
+            <field name="subchapter" readonly="1"/>
+            <field name="name" readonly="1"/>
+          </group>
+
+          <!-- SUMAR pe 3 coloane -->
+          <group string="Sumar" col="3">
+            <!-- 1) Plan + Contracte -->
+            <group>
+              <field name="total_eligibil" readonly="1"/>
+              <field name="total_neeligibil" readonly="1"/>
+
+              <field name="contract_base_total" readonly="1"/>
+              <field name="contract_vat_total" readonly="1"/>
+              <field name="contract_total" readonly="1"/>
+            </group>
+
+            <!-- 2) Documente -->
+            <group>
+              <field name="documents_elig_total" readonly="1"/>
+              <field name="documents_neelig_total" readonly="1"/>
+              <field name="documents_total" readonly="1"/>
+            </group>
+
+            <!-- 3) Decontări + Sold + Neramb -->
+            <group>
+              <field name="settlements_total" readonly="1"/>
+              <field name="sold_total" readonly="1"/>
+              <field name="neramb_total" readonly="1"/>
+              <field name="neramb_minus_settled" readonly="1"/>
+            </group>
+          </group>
+
+          <notebook>
+            <page string="Linii contract">
+              <field name="contract_line_ids" nolabel="1">
+                <list create="0" delete="0">
+                  <field name="contract_id"/>
+                  <field name="budget_proxy_line_id" invisible="1"/>
+                  <field name="base_amount"/>
+                  <field name="vat_rate"/>
+                  <field name="vat_amount"/>
+                  <field name="total_amount"/>
+                  <field name="name"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Linii document">
+              <field name="document_line_ids" nolabel="1">
+                <list create="0" delete="0">
+                  <field name="contract_line_id"/>
+                  <field name="vat_rate"/>
+
+                  <field name="elig_base_amount"/>
+                  <field name="elig_vat_amount"/>
+                  <field name="elig_total_amount"/>
+
+                  <field name="neelig_base_amount"/>
+                  <field name="neelig_vat_amount"/>
+                  <field name="neelig_total_amount"/>
+
+                  <field name="total_amount"/>
+                  <field name="notes"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Linii decontare">
+              <field name="settlement_line_ids" nolabel="1">
+                <list create="0" delete="0">
+                  <field name="document_line_id"/>
+
+                  <field name="elig_base_amount"/>
+                  <field name="elig_vat_amount"/>
+                  <field name="vat_rate"/>
+
+                  <field name="document_number" readonly="1"/>
+                  <field name="document_date" readonly="1"/>
+                  <field name="issuer_name" readonly="1"/>
+                </list>
+              </field>
+            </page>
+          </notebook>
+
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <record id="view_project_implementation_create_wizard_form" model="ir.ui.view">
+    <field name="name">project.implementation.create.wizard.form</field>
+    <field name="model">project.implementation.create.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Creează implementare" create="false" edit="false">
+        <group>
+          <field name="funding_id"
+                 domain="[('status_proiect','=','contractat'),
+                          ('id','not in', context.get('excluded_funding_ids', []))]"/>
+        </group>
+        <footer>
+          <button name="action_confirm_create" type="object" class="btn-primary" string="OK"/>
+          <button special="cancel" class="btn-secondary" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <!-- IMPORTANT: păstrăm același id, ca să meargă env.ref(...) -->
+  <record id="action_project_implementation_create_wizard" model="ir.actions.act_window">
+    <field name="name">Creează implementare</field>
+    <field name="res_model">project.implementation.create.wizard</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+    <field name="context">{}</field>
+  </record>
+
+</odoo>

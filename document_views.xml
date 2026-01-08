@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <!-- LIST -->
+  <record id="view_project_document_list" model="ir.ui.view">
+    <field name="name">project.document.list</field>
+    <field name="model">project.document</field>
+    <field name="arch" type="xml">
+      <!-- permitem ștergere; e blocată în Python dacă documentul are linii -->
+      <list string="Documente" create="1" delete="1">
+        <button name="action_open_details" type="object" string="Detalii" class="btn-secondary"/>
+	<button name="action_open_files" type="object" string="Fișiere" class="btn-secondary"/>
+	<button name="action_add_file" type="object" string="Adaugă fișier" class="btn-primary"/>
+
+        <field name="document_type"/>
+        <field name="document_number"/>
+        <field name="document_date"/>
+        <field name="issuer_name"/>
+        <field name="contract_id"/>
+        <field name="amount_total"/>
+      </list>
+    </field>
+  </record>
+
+  <!-- FORM: HEADER ONLY -->
+  <record id="view_project_document_form_header" model="ir.ui.view">
+    <field name="name">project.document.form.header</field>
+    <field name="model">project.document</field>
+    <field name="arch" type="xml">
+      <form string="Document">
+        <sheet>
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="currency_id" invisible="1"/>
+
+            <field name="contract_id"/>
+            <field name="document_type"/>
+            <field name="document_number"/>
+            <field name="document_date"/>
+            <field name="issuer_name"/>
+            <field name="notes"/>
+          </group>
+
+          <group>
+            <field name="amount_elig_base_total" readonly="1"/>
+            <field name="amount_elig_vat_total" readonly="1"/>
+            <field name="amount_neelig_base_total" readonly="1"/>
+            <field name="amount_neelig_vat_total" readonly="1"/>
+            <field name="amount_total" readonly="1"/>
+          </group>
+
+          <div class="o_form_label text-muted">
+            Pentru linii, folosește butonul “Detalii” din listă.
+          </div>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- FORM: DETAILS (dialog) -->
+  <record id="view_project_document_form_details" model="ir.ui.view">
+    <field name="name">project.document.form.details</field>
+    <field name="model">project.document</field>
+    <field name="arch" type="xml">
+      <form string="Detalii document">
+        <sheet>
+
+          <group>
+            <field name="implementation_id" invisible="1"/>
+            <field name="currency_id" invisible="1"/>
+
+            <field name="contract_id" readonly="1"/>
+            <field name="document_type" readonly="1"/>
+            <field name="document_number" readonly="1"/>
+            <field name="document_date" readonly="1"/>
+            <field name="issuer_name" readonly="1"/>
+          </group>
+
+          <notebook>
+            <page string="Linii document">
+              <field name="line_ids" nolabel="1" context="{'form_view_ref': 'project_implementation.view_project_document_line_form'}">
+                <!-- permitem delete; dacă există decontări, unlink() blochează -->
+                <list create="1" delete="1">
+                  <field name="document_id" invisible="1" readonly="1"/>
+
+                  <field name="contract_line_id"/>
+                  <field name="budget_proxy_line_id" readonly="1"/>
+
+                  <field name="vat_rate"/>
+
+                  <field name="elig_base_amount"/>
+                  <field name="elig_vat_amount"/>
+                  <field name="elig_total_amount" readonly="1"/>
+
+                  <field name="neelig_base_amount"/>
+                  <field name="neelig_vat_amount"/>
+                  <field name="neelig_total_amount" readonly="1"/>
+
+                  <field name="total_amount" readonly="1"/>
+                  <field name="notes"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Sumar">
+              <group>
+                <field name="amount_elig_base_total" readonly="1"/>
+                <field name="amount_elig_vat_total" readonly="1"/>
+                <field name="amount_neelig_base_total" readonly="1"/>
+                <field name="amount_neelig_vat_total" readonly="1"/>
+                <field name="amount_total" readonly="1"/>
+              </group>
+            </page>
+          </notebook>
+
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- FORM POPUP pentru liniile de document -->
+  <record id="view_project_document_line_form" model="ir.ui.view">
+    <field name="name">project.document.line.form</field>
+    <field name="model">project.document.line</field>
+    <field name="arch" type="xml">
+      <form string="Linie document">
+        <sheet>
+          <group>
+            <field name="document_id" invisible="1" readonly="1"/>
+
+            <field name="contract_line_id"/>
+            <field name="budget_proxy_line_id" readonly="1"/>
+
+            <field name="vat_rate"/>
+
+            <field name="elig_base_amount"/>
+            <field name="elig_vat_amount"/>
+            <field name="elig_total_amount" readonly="1"/>
+
+            <field name="neelig_base_amount"/>
+            <field name="neelig_vat_amount"/>
+            <field name="neelig_total_amount" readonly="1"/>
+
+            <field name="total_amount" readonly="1"/>
+            <field name="notes"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_implementation,access_project_implementation,model_project_implementation,,1,1,1,1
+access_project_contract,access_project_contract,model_project_contract,,1,1,1,0
+access_project_document,access_project_document,model_project_document,,1,1,1,0
+access_project_request,access_project_request,model_project_request,,1,1,1,0
+access_project_implementation_create_wizard,access_project_implementation_create_wizard,model_project_implementation_create_wizard,,1,1,1,1
+access_project_implementation_budget_line,access_project_implementation_budget_line,model_project_implementation_budget_line,,1,1,1,0
+access_project_contract_line,access_project_contract_line,model_project_contract_line,,1,1,1,0
+access_project_document_line,access_project_document_line,model_project_document_line,,1,1,1,1
+access_project_implementation_acquisition_line_user,access.project.implementation.acquisition.line.user,model_project_implementation_acquisition_line,base.group_user,1,1,1,1
+access_project_implementation_activity_line_user,access.project.implementation.activity.line.user,model_project_implementation_activity_line,base.group_user,1,1,1,1
+access_project_settlement,access_project_settlement,model_project_settlement,base.group_user,1,1,1,1
+access_project_settlement_line,access_project_settlement_line,model_project_settlement_line,base.group_user,1,1,1,1
+access_project_file_user,access.project.file.user,model_project_file,base.group_user,1,1,1,1
+access_project_file_add_wizard,access.project.file.add.wizard,model_project_file_add_wizard,base.group_user,1,1,1,1
